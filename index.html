@@ -1,0 +1,1149 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Smartphone Luxe — جرابات فاخرة لهاتفك</title>
+<meta name="description" content="Smartphone Luxe — جرابات هواتف فاخرة، توصيل إلى 58 ولاية والدفع عند الاستلام.">
+<meta name="theme-color" content="#0e0d10">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Smartphone Luxe — جرابات فاخرة لهاتفك">
+<meta property="og:description" content="نسخة عرض للمتجر: اختر هاتفك، اختر البوشة، واطلب بالدفع عند الاستلام.">
+<meta property="og:image" content="https://youcefhadjii.github.io/smartphone-luxe-demo/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://youcefhadjii.github.io/smartphone-luxe-demo/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230e0d10'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-weight='700' font-size='38' fill='%23d4b47e'%3EL%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="https://youcefhadjii.github.io/smartphone-luxe-demo/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5f1ea; --bg2:#ece6db; --card:#fff; --ink:#141217; --ink2:#2b2830; --mut:#7a736a;
+  --line:#e3dccf; --gold:#a9834a; --gold2:#dcc192; --goldsoft:#f3eadb; --dark:#0e0d10;
+  --err:#b42318; --ok:#1f7a4d; --ease:cubic-bezier(.2,.8,.2,1);
+  --serif:'Cormorant Garamond',Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'Readex Pro',system-ui,-apple-system,'Segoe UI',Tahoma,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body.lock{overflow:hidden}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+img,svg{display:block}
+.wrap{max-width:1240px;margin:0 auto;padding:0 16px}
+@media(min-width:768px){.wrap{padding:0 32px}}
+[hidden]{display:none!important}
+section[id]{scroll-margin-top:76px}
+.ic{width:20px;height:20px;flex:none}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:10px}
+
+/* ---------- announcement ---------- */
+.bar{background:var(--dark);color:#e7dcc8;font-size:12.5px;overflow:hidden;white-space:nowrap;height:36px;display:flex;align-items:center}
+.bar-track{display:inline-flex;gap:56px;padding-inline-start:56px;animation:marq 34s linear infinite}
+.bar-track span{display:inline-flex;align-items:center;gap:10px}
+.bar-track span::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--gold2)}
+@keyframes marq{to{transform:translateX(-50%)}}
+
+/* ---------- header ---------- */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(245,241,234,.86);backdrop-filter:saturate(1.4) blur(16px);-webkit-backdrop-filter:saturate(1.4) blur(16px);border-bottom:1px solid transparent;transition:border-color .3s}
+.hdr.scrolled{border-color:var(--line)}
+.hdr-in{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:inline-flex;align-items:baseline;gap:7px;line-height:1;white-space:nowrap}
+.logo .l1{font-weight:600;font-size:13px;letter-spacing:.3em}
+.logo .l2{font-family:var(--serif);font-style:italic;font-weight:600;font-size:27px;color:var(--gold);letter-spacing:.01em}
+.nav{display:none;gap:34px;font-size:14.5px;color:var(--ink2)}
+.nav a{position:relative;padding:6px 0;transition:color .2s}
+.nav a::after{content:"";position:absolute;inset-inline:0;bottom:0;height:1px;background:var(--gold);transform:scaleX(0);transition:transform .35s var(--ease)}
+.nav a:hover{color:var(--ink)}
+.nav a:hover::after{transform:scaleX(1)}
+.hdr-act{display:flex;align-items:center;gap:8px}
+.ibtn{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);background:rgba(255,255,255,.6);transition:background .2s,border-color .2s}
+.ibtn:hover{background:#fff;border-color:#d4cbbb}
+.pill-btn{display:none;align-items:center;gap:8px;height:42px;padding:0 18px;border-radius:999px;background:var(--ink);color:#fff;font-size:14px;font-weight:500}
+.pill-btn .ic{width:18px;height:18px}
+.mnav{border-top:1px solid var(--line);background:var(--bg)}
+.mnav a{display:flex;justify-content:space-between;align-items:center;padding:16px 16px;border-bottom:1px solid var(--line);font-size:16px}
+@media(min-width:960px){.nav{display:flex}.pill-btn{display:inline-flex}.menu-btn{display:none}}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:54px;padding:0 28px;border-radius:999px;font-weight:600;font-size:15.5px;transition:transform .25s var(--ease),box-shadow .25s,background .25s;white-space:nowrap}
+.btn:active{transform:scale(.98)}
+.btn .ic{width:18px;height:18px}
+.btn-gold{background:linear-gradient(135deg,#ecd3a3 0%,#c49d5f 55%,#a9834a 100%);color:#1a140b;box-shadow:0 10px 30px -10px rgba(201,160,95,.6)}
+.btn-gold:hover{box-shadow:0 16px 40px -12px rgba(201,160,95,.8)}
+.btn-ghost{border:1px solid rgba(255,255,255,.22);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.07)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-line{border:1px solid var(--ink);color:var(--ink)}
+
+/* ---------- hero ---------- */
+.hero{padding-top:14px}
+.hero-card{position:relative;border-radius:30px;overflow:hidden;color:#f4ecdf;display:grid;grid-template-columns:minmax(0,1fr);
+  background:radial-gradient(90% 80% at 85% 10%,#2b2219 0%,rgba(43,34,25,0) 60%),radial-gradient(70% 70% at 10% 90%,#1f1a26 0%,rgba(31,26,38,0) 60%),#0e0d10}
+.hero-card::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:56px 56px;
+  -webkit-mask-image:radial-gradient(80% 70% at 30% 50%,#000,transparent 75%);mask-image:radial-gradient(80% 70% at 30% 50%,#000,transparent 75%)}
+.hero-copy{position:relative;z-index:2;padding:38px 22px 0}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.12em;color:var(--gold2);font-weight:500;margin-bottom:18px}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--gold2)}
+.hero h1{font-size:clamp(36px,8.6vw,70px);line-height:1.13;font-weight:600;letter-spacing:-.01em}
+.hero h1 em{font-style:normal;background:linear-gradient(120deg,#f1dcb3,#c79f5e);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{margin-top:18px;max-width:470px;color:rgba(244,236,223,.7);font-size:16px;font-weight:300}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero-pts{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:30px;font-size:13px;color:rgba(244,236,223,.78)}
+.hero-pts span{display:inline-flex;align-items:center;gap:8px}
+.hero-pts .ic{width:17px;height:17px;color:var(--gold2)}
+.hv{position:relative;height:390px;z-index:1}
+.hv-glow{position:absolute;left:50%;top:52%;width:440px;height:440px;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(220,193,146,.30),rgba(220,193,146,0) 62%)}
+.hv-ring{position:absolute;left:50%;top:52%;transform:translate(-50%,-50%);border-radius:50%;border:1px solid rgba(220,193,146,.22)}
+.hv-ring.r1{width:330px;height:330px}
+.hv-ring.r2{width:470px;height:470px;border-style:dashed;border-color:rgba(220,193,146,.12);animation:spin 80s linear infinite}
+@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
+.hv-c{position:absolute;left:50%;top:52%;width:var(--w);transform:translate(-50%,-50%) translateX(var(--x)) rotate(var(--r));animation:float 7s ease-in-out infinite;animation-delay:var(--d)}
+.hv-c svg{width:100%;height:auto;filter:drop-shadow(0 34px 30px rgba(0,0,0,.6))}
+@keyframes float{0%,100%{transform:translate(-50%,-50%) translateX(var(--x)) translateY(0) rotate(var(--r))}50%{transform:translate(-50%,-50%) translateX(var(--x)) translateY(-14px) rotate(var(--r))}}
+.hv-c.c1{--w:122px;--x:-96px;--r:-14deg;--d:-1.2s;z-index:1}
+.hv-c.c2{--w:146px;--x:0px;--r:0deg;--d:-3.4s;z-index:3}
+.hv-c.c3{--w:122px;--x:96px;--r:14deg;--d:-2.2s;z-index:2}
+.hv-chip{position:absolute;z-index:4;display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:16px;font-size:12px;line-height:1.35;color:#f1e7d6;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.hv-chip .ic{width:18px;height:18px;color:var(--gold2)}
+.hv-chip b{display:block;font-weight:500;font-size:12.5px}
+.hv-chip small{color:rgba(241,231,214,.6)}
+.hv-chip.k1{bottom:22px;left:14px}
+.hv-chip.k2{top:2px;right:14px}
+@media(max-width:959px){
+  .hero-ctas{display:grid;grid-template-columns:1.3fr 1fr;gap:10px}
+  .hero-ctas .btn{padding:0 12px;font-size:14.5px;height:52px}
+}
+@media(min-width:960px){
+  .hero-card{grid-template-columns:1.02fr 1fr;min-height:620px}
+  .hero-copy{padding:64px 48px 56px;align-self:center}
+  .hero h1{font-size:clamp(42px,4.7vw,68px)}
+  .hv{height:auto;min-height:600px}
+  .hv-glow{width:560px;height:560px}
+  .hv-ring.r1{width:420px;height:420px}.hv-ring.r2{width:580px;height:580px}
+  .hv-c.c1{--w:150px;--x:-118px}.hv-c.c2{--w:180px}.hv-c.c3{--w:150px;--x:118px}
+  .hv-chip.k1{bottom:40px;left:28px}.hv-chip.k2{top:44px;right:28px}
+}
+@media(min-width:1200px){
+  .hero-copy{padding:84px 64px 64px}
+  .hv{min-height:640px}
+  .hv-glow{width:620px;height:620px}
+  .hv-ring.r1{width:470px;height:470px}.hv-ring.r2{width:650px;height:650px}
+  .hv-c.c1{--w:186px;--x:-150px}.hv-c.c2{--w:222px}.hv-c.c3{--w:186px;--x:150px}
+  .hv-chip.k1{bottom:56px;left:40px}.hv-chip.k2{top:64px;right:44px}
+}
+
+/* brand strip */
+.brands-strip{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px 30px;padding:26px 0 0;color:#8f877b;font-size:13px}
+.brands-strip b{font-weight:600;letter-spacing:.16em;font-size:12.5px;color:#a69d90}
+
+/* ---------- sections ---------- */
+.sec{padding:64px 0}
+@media(min-width:960px){.sec{padding:92px 0}}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:14px 24px;margin-bottom:26px}
+.kicker{display:block;font-size:11.5px;letter-spacing:.26em;color:var(--gold);font-weight:600;margin-bottom:10px}
+.sec-head h2,.h2{font-size:clamp(27px,4.4vw,42px);line-height:1.2;font-weight:600;letter-spacing:-.01em}
+.sec-head p{color:var(--mut);max-width:440px;font-size:15px}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+
+/* ---------- finder ---------- */
+.finder{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:22px 18px;display:grid;grid-template-columns:minmax(0,1fr);gap:18px}
+.finder>*{min-width:0}
+@media(min-width:960px){.finder{grid-template-columns:300px 1fr;padding:34px;gap:40px;align-items:start}}
+.finder h2{font-size:clamp(23px,3vw,30px);line-height:1.25;font-weight:600}
+.finder .f-copy p{color:var(--mut);font-size:14.5px;margin-top:8px}
+.chips{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px;margin-inline:-18px;padding-inline:18px}
+.chips::-webkit-scrollbar{display:none}
+@media(min-width:960px){.chips{margin-inline:0;padding-inline:0;flex-wrap:wrap;overflow:visible}}
+.chip{flex:none;height:44px;padding:0 18px;border-radius:999px;border:1px solid var(--line);background:#fff;font-size:14px;font-weight:500;transition:all .2s;white-space:nowrap}
+.chip:hover{border-color:#cfc5b4}
+.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.chip .n{font-size:11.5px;opacity:.55;margin-inline-start:6px}
+.models{margin-top:12px}
+.model{flex:none;height:38px;padding:0 14px;border-radius:12px;background:var(--bg);border:1px solid transparent;font-size:13.5px;direction:ltr;transition:all .2s;white-space:nowrap}
+.model:hover{border-color:var(--line)}
+.model.on{border-color:var(--gold);background:var(--goldsoft);color:#5b4321;font-weight:500}
+.f-status{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:16px;padding:12px 14px;border-radius:16px;background:var(--goldsoft);color:#5b4321;font-size:13.5px}
+.f-status .ic{width:18px;height:18px}
+.f-status span{display:inline-flex;align-items:center;gap:8px}
+.f-status a{font-weight:600;white-space:nowrap;text-decoration:underline;text-underline-offset:3px}
+
+/* ---------- grid ---------- */
+.cats{margin-bottom:22px}
+.grid-meta{font-size:13.5px;color:var(--mut)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(min-width:700px){.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}}
+@media(min-width:1100px){.grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}}
+.card{background:var(--card);border-radius:22px;overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column;cursor:pointer;transition:transform .45s var(--ease),box-shadow .45s var(--ease);animation:cardIn .7s var(--ease) both;animation-delay:calc(var(--i) * 60ms)}
+@keyframes cardIn{from{opacity:0;transform:translateY(18px)}}
+.card:hover{transform:translateY(-5px);box-shadow:0 28px 50px -30px rgba(40,30,15,.45)}
+.cm{position:relative;aspect-ratio:4/4.6;background:var(--tone);display:grid;place-items:center;overflow:hidden}
+.cm::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 50% at 50% 35%,rgba(255,255,255,.65),rgba(255,255,255,0))}
+.cs{position:relative;width:44%;transition:transform .7s var(--ease)}
+.cs svg{width:100%;height:auto;filter:drop-shadow(0 18px 16px rgba(30,22,10,.28))}
+.card:hover .cs{transform:rotate(-5deg) scale(1.05)}
+.badges{position:absolute;top:10px;right:10px;left:10px;display:flex;justify-content:space-between;gap:6px;z-index:2}
+.badge{font-size:11px;padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.92);color:var(--ink);font-weight:600;white-space:nowrap}
+.badge.sale{background:var(--ink);color:#f3e7d2;direction:ltr;unicode-bidi:isolate}
+.cb{padding:13px 13px 14px;display:flex;flex-direction:column;flex:1}
+.en{font-size:10px;letter-spacing:.22em;color:var(--mut);font-weight:500;direction:ltr;text-align:right}
+.nm{font-size:15px;font-weight:600;line-height:1.4;margin:3px 0 6px}
+.pr{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 9px}
+.pr b{font-size:16px;font-weight:700}
+.pr s{color:#a39a8d;font-size:12.5px}
+.dots{display:flex;gap:6px;margin-top:10px}
+.dot{width:16px;height:16px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px #d6cdbd;transition:box-shadow .2s}
+.dot.on{box-shadow:0 0 0 1.5px var(--ink)}
+.card .cta{margin-top:auto;height:42px;border-radius:12px;background:var(--ink);color:#fff;font-size:13.5px;font-weight:500;margin-top:14px;display:flex;align-items:center;justify-content:center;gap:8px;transition:background .2s}
+.card .cta .ic{width:16px;height:16px}
+.card:hover .cta{background:#000}
+@media(min-width:700px){.cb{padding:16px 18px 18px}.nm{font-size:16px}.pr b{font-size:17px}}
+.empty{grid-column:1/-1;text-align:center;padding:48px 16px;color:var(--mut);background:var(--card);border-radius:22px;border:1px dashed var(--line)}
+
+/* ---------- feature ---------- */
+.feature{position:relative;background:var(--dark);color:#efe6d6;border-radius:30px;overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr)}
+.feature .f-vis{position:relative;min-height:340px;display:grid;place-items:center;background:radial-gradient(55% 55% at 50% 50%,rgba(220,193,146,.22),rgba(220,193,146,0) 70%)}
+.feature .f-vis .cs{width:180px}
+.feature .f-vis .cs svg{filter:drop-shadow(0 40px 34px rgba(0,0,0,.7))}
+.pulse{position:absolute;left:50%;top:56%;width:160px;height:160px;margin:-80px 0 0 -80px;border-radius:50%;border:1.5px solid rgba(255,255,255,.35);animation:pulse 3.2s ease-out infinite}
+.pulse.p2{animation-delay:1.6s}
+@keyframes pulse{from{transform:scale(.6);opacity:.9}to{transform:scale(1.9);opacity:0}}
+.feature .f-copy{padding:8px 22px 34px;position:relative}
+.feature h2{font-size:clamp(28px,4.4vw,44px);line-height:1.18;font-weight:600}
+.feature p{color:rgba(239,230,214,.68);margin-top:14px;max-width:460px;font-weight:300}
+.ticks{list-style:none;display:grid;gap:12px;margin:24px 0 30px}
+.ticks li{display:flex;align-items:center;gap:12px;font-size:15px}
+.ticks .t{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:rgba(220,193,146,.14);color:var(--gold2);flex:none}
+.ticks .t .ic{width:15px;height:15px}
+@media(min-width:960px){.feature{grid-template-columns:1fr 1fr}.feature .f-vis{min-height:560px}.feature .f-vis .cs{width:250px}.pulse{width:220px;height:220px;margin:-110px 0 0 -110px}.feature .f-copy{padding:72px 64px;align-self:center}}
+
+/* ---------- trust ---------- */
+.trust{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(min-width:960px){.trust{grid-template-columns:repeat(4,1fr);gap:18px}}
+.tr{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:20px 16px}
+.tr .ti{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--goldsoft);color:#8a6a37;margin-bottom:14px}
+.tr .ti .ic{width:22px;height:22px}
+.tr b{display:block;font-size:15.5px;font-weight:600;margin-bottom:4px}
+.tr p{color:var(--mut);font-size:13.5px;line-height:1.55}
+@media(min-width:960px){.tr{padding:26px 24px}}
+
+/* ---------- reviews ---------- */
+.revs{display:grid;gap:14px}
+@media(min-width:900px){.revs{grid-template-columns:repeat(3,1fr);gap:20px}}
+.rev{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px;display:flex;flex-direction:column;gap:14px}
+.stars{display:flex;gap:3px;color:#c49d5f}
+.stars .ic{width:16px;height:16px}
+.rev q{font-size:15.5px;line-height:1.75;quotes:"«" "»"}
+.rev .who{display:flex;align-items:center;gap:12px;margin-top:auto;padding-top:14px;border-top:1px solid var(--line)}
+.av{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--ink);color:var(--gold2);font-weight:600}
+.who b{display:block;font-size:14px}
+.who small{color:var(--mut);font-size:12.5px}
+
+/* ---------- faq ---------- */
+.faq-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
+@media(min-width:960px){.faq-grid{grid-template-columns:360px 1fr;gap:60px}}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;font-size:16.5px;font-weight:500}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .pm{width:30px;height:30px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;flex:none;transition:transform .3s var(--ease),background .3s}
+.faq summary .pm .ic{width:15px;height:15px}
+.faq details[open] summary .pm{transform:rotate(45deg);background:var(--ink);color:#fff;border-color:var(--ink)}
+.faq details p{color:var(--mut);padding:0 0 22px;max-width:640px}
+
+/* ---------- contact ---------- */
+.contact{border-radius:30px;padding:34px 22px;background:linear-gradient(135deg,#efe3cc,#e2cfa9);display:grid;gap:22px;align-items:center}
+.contact h2{font-size:clamp(25px,3.6vw,36px);line-height:1.25;font-weight:600}
+.contact p{color:#5d4c33;margin-top:8px}
+.contact .acts{display:flex;flex-wrap:wrap;gap:10px}
+@media(min-width:960px){.contact{grid-template-columns:1fr auto;padding:52px 56px}}
+
+/* ---------- footer ---------- */
+.ftr{background:var(--dark);color:#cfc5b4;margin-top:64px;padding:56px 0 28px}
+.ftr-grid{display:grid;gap:30px}
+@media(min-width:900px){.ftr-grid{grid-template-columns:1.4fr 1fr 1fr 1fr}}
+.ftr .logo .l1{color:#f4ecdf}
+.ftr p{font-size:14px;color:#9d9384;margin-top:14px;max-width:320px}
+.ftr h4{color:#f4ecdf;font-size:14px;font-weight:600;margin-bottom:14px}
+.ftr ul{list-style:none;display:grid;gap:10px;font-size:14px}
+.ftr ul a:hover{color:#fff}
+.soc{display:flex;gap:10px;margin-top:18px}
+.soc a{width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.14);display:grid;place-items:center}
+.soc .ic{width:18px;height:18px}
+.ftr-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;margin-top:44px;padding-top:22px;border-top:1px solid rgba(255,255,255,.08);font-size:12.5px;color:#857c6f}
+
+/* ---------- product sheet ---------- */
+.sheet{position:fixed;inset:0;z-index:100;display:flex;align-items:stretch;justify-content:center}
+.sheet-bg{position:absolute;inset:0;background:rgba(14,12,10,.55);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);animation:fade .35s both}
+.sheet-panel{position:relative;background:var(--bg);width:100%;height:100%;height:100dvh;overflow-y:auto;overscroll-behavior:contain;animation:up .5s var(--ease) both}
+@keyframes fade{from{opacity:0}}
+@keyframes up{from{transform:translateY(40px);opacity:0}}
+@media(min-width:900px){.sheet{align-items:center;padding:28px}.sheet-panel{max-width:1140px;height:auto;max-height:calc(100dvh - 56px);border-radius:30px;box-shadow:0 60px 120px -40px rgba(0,0,0,.6)}}
+.pd-top{position:sticky;top:0;z-index:6;display:flex;align-items:center;justify-content:space-between;height:62px;padding:0 12px;background:rgba(245,241,234,.9);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.pd-top .back{display:inline-flex;align-items:center;gap:6px;height:42px;padding:0 10px;border-radius:12px;font-size:14px;color:var(--ink2)}
+.pd-top .logo .l1{font-size:10.5px}.pd-top .logo .l2{font-size:22px}
+.pd{display:grid;grid-template-columns:minmax(0,1fr)}
+@media(min-width:900px){.pd{grid-template-columns:1fr 1fr}.pd-top{padding:0 22px}}
+.pd-media{padding:14px 14px 0}
+@media(min-width:900px){.pd-media{position:sticky;top:62px;align-self:start;padding:26px}}
+.stage{position:relative;border-radius:26px;background:var(--tone);aspect-ratio:1/1.02;display:grid;place-items:center;overflow:hidden;transition:background .5s}
+.stage::before{content:"";position:absolute;inset:0;background:radial-gradient(55% 45% at 50% 38%,rgba(255,255,255,.7),rgba(255,255,255,0))}
+.stage .cs{width:42%;transform-origin:31% 16%;transition:transform .8s var(--ease)}
+.stage .cs svg{filter:drop-shadow(0 30px 26px rgba(30,22,10,.3))}
+.stage[data-v="angle"] .cs{transform:perspective(900px) rotateY(-30deg) rotateZ(-5deg)}
+.stage[data-v="detail"] .cs{transform:translate(19%,34%) scale(2.25)}
+.stage .st-badge{position:absolute;top:14px;right:14px;z-index:2}
+.views{display:flex;gap:8px;margin-top:10px}
+.view{flex:1;height:44px;border-radius:14px;border:1px solid var(--line);background:#fff;font-size:13px;color:var(--ink2);transition:all .2s}
+.view.on{border-color:var(--ink);background:var(--ink);color:#fff}
+.pd-info{padding:22px 16px 28px}
+@media(min-width:900px){.pd-info{padding:30px 30px 40px 36px}}
+.pd-info h2{font-size:clamp(25px,3.4vw,34px);line-height:1.25;font-weight:600;margin-top:6px}
+.pd-info .sub{color:var(--mut);margin-top:8px;font-size:15px}
+.pr.big{margin-top:16px;gap:6px 12px;align-items:center}
+.pr.big b{font-size:26px}
+.pr.big s{font-size:15px}
+.save{font-size:12.5px;font-weight:600;color:var(--ok);background:#e3f1e8;padding:3px 10px;border-radius:999px}
+.pts{list-style:none;display:grid;gap:8px;margin-top:18px;padding:16px;border-radius:18px;background:var(--bg2)}
+.pts li{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--ink2)}
+.pts .ic{width:16px;height:16px;color:var(--gold)}
+.opts{display:grid;gap:16px;margin-top:22px}
+.fld label.lb,.fld>label{display:block;font-size:13px;color:var(--mut);margin-bottom:7px;font-weight:500}
+.fld>label b{color:var(--ink)}
+.fld input,.fld select{width:100%;height:52px;border-radius:14px;border:1px solid var(--line);background:#fff;padding:0 14px;font:inherit;font-size:15px;color:var(--ink);transition:border-color .2s,box-shadow .2s;-webkit-appearance:none;appearance:none}
+.fld select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none'%3E%3Cpath d='M1 1.5 6 6.5l5-5' stroke='%237a736a' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:left 14px center;padding-left:36px;cursor:pointer}
+.fld select:disabled{background-color:#f7f4ef;color:#a39a8d;cursor:not-allowed}
+.fld input::placeholder{color:#b0a798}
+.fld input:focus,.fld select:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 4px rgba(201,160,95,.16)}
+.fld input[dir=ltr]{text-align:right;letter-spacing:.04em}
+.fld .msg{display:none;color:var(--err);font-size:12.5px;margin-top:6px}
+.fld.err input,.fld.err select{border-color:var(--err);box-shadow:0 0 0 4px rgba(180,35,24,.08)}
+.fld.err .msg{display:block}
+.sw{display:flex;flex-wrap:wrap;gap:10px}
+.swb{width:36px;height:36px;border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 1px #d6cdbd;transition:box-shadow .2s,transform .2s}
+.swb:hover{transform:scale(1.06)}
+.swb.on{box-shadow:0 0 0 2px var(--ink)}
+.qty{display:inline-flex;align-items:center;height:52px;border:1px solid var(--line);border-radius:14px;background:#fff;overflow:hidden}
+.qty button{width:50px;height:100%;display:grid;place-items:center;font-size:20px;color:var(--ink2)}
+.qty button:hover{background:var(--bg)}
+.qty span{min-width:36px;text-align:center;font-weight:600;font-size:16px}
+.up{display:flex;align-items:center;gap:12px;padding:14px;border-radius:16px;border:1.5px dashed #d4c39f;background:#fffaf1;cursor:pointer;transition:all .2s}
+.up input{position:absolute;opacity:0;pointer-events:none}
+.up-box{width:24px;height:24px;border-radius:7px;border:1.5px solid #c9b58e;display:grid;place-items:center;flex:none;color:transparent;transition:all .2s;background:#fff}
+.up-box .ic{width:15px;height:15px}
+.up.on{border-style:solid;border-color:var(--gold);background:var(--goldsoft)}
+.up.on .up-box{background:var(--ink);border-color:var(--ink);color:#fff}
+.up-t{flex:1;line-height:1.4}
+.up-t b{display:block;font-size:14px;font-weight:600}
+.up-t small{font-size:12.5px;color:var(--mut)}
+.up-p{font-weight:600;font-size:14px;white-space:nowrap}
+.order{margin-top:22px;background:#fff;border:1px solid var(--line);border-radius:24px;padding:20px 16px;display:grid;gap:14px;scroll-margin-top:76px}
+@media(min-width:900px){.order{padding:24px}}
+.o-h{display:flex;gap:12px;align-items:center;margin-bottom:4px}
+.o-i{width:44px;height:44px;border-radius:14px;background:var(--ink);color:var(--gold2);display:grid;place-items:center;flex:none}
+.o-h h3{font-size:18px;font-weight:600;line-height:1.3}
+.o-h p{font-size:13px;color:var(--mut)}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ship{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.opt{position:relative;border:1.5px solid var(--line);border-radius:16px;padding:12px 12px 12px;cursor:pointer;display:flex;flex-direction:column;gap:2px;transition:all .2s;background:#fff}
+.opt input{position:absolute;opacity:0;pointer-events:none}
+.opt .opt-i{color:var(--mut);margin-bottom:6px}
+.opt b{font-size:14px;font-weight:600;line-height:1.35}
+.opt small{font-size:13px;color:var(--mut)}
+.opt.on{border-color:var(--ink);background:var(--bg)}
+.opt.on .opt-i{color:var(--gold)}
+.opt.on::after{content:"";position:absolute;top:12px;left:12px;width:18px;height:18px;border-radius:50%;background:var(--ink) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8' fill='none'%3E%3Cpath d='M1 4l2.8 2.8L9 1.2' stroke='%23fff' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center no-repeat}
+.sum{border-radius:16px;background:var(--bg);padding:14px 16px;display:grid;gap:9px;font-size:14px}
+.sum .row{display:flex;justify-content:space-between;gap:12px;color:var(--ink2)}
+.sum .row span:last-child{white-space:nowrap}
+.sum .tot{border-top:1px dashed #cfc5b4;padding-top:11px;margin-top:2px;font-size:16px;color:var(--ink)}
+.sum .tot b{font-size:20px;font-weight:700}
+.btn-order{position:relative;overflow:hidden;width:100%;min-height:60px;border-radius:16px;background:var(--ink);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.3;transition:transform .2s}
+.btn-order:active{transform:scale(.99)}
+.btn-order span{font-size:17px;font-weight:600}
+.btn-order small{font-size:12px;color:var(--gold2);font-weight:400}
+.btn-order::after{content:"";position:absolute;top:0;bottom:0;width:40%;left:-60%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.14),transparent);animation:shine 3.6s ease-in-out infinite}
+@keyframes shine{0%,55%{left:-60%}100%{left:130%}}
+.safe{display:flex;align-items:center;justify-content:center;gap:8px;font-size:12.5px;color:var(--mut);text-align:center}
+.safe .ic{width:15px;height:15px}
+.pd-bar{position:sticky;bottom:0;z-index:6;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(255,255,255,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);transition:transform .35s var(--ease),opacity .35s}
+.pd-bar.hide{transform:translateY(100%);opacity:0;pointer-events:none}
+.pd-bar small{display:block;font-size:12px;color:var(--mut);line-height:1.2}
+.pd-bar b{font-size:19px;font-weight:700;white-space:nowrap}
+.pd-bar button{height:50px;padding:0 24px;border-radius:14px;background:var(--ink);color:#fff;font-weight:600;font-size:15px;display:inline-flex;align-items:center;gap:8px}
+.pd-bar button .ic{width:17px;height:17px}
+@media(min-width:900px){.pd-bar{display:none}}
+
+/* success */
+.done{max-width:580px;margin:0 auto;padding:40px 16px 48px;text-align:center}
+.ok-ic{width:84px;height:84px;margin:0 auto 18px}
+.ok-ic circle{stroke:var(--gold);stroke-width:2;fill:none;stroke-dasharray:160;stroke-dashoffset:160;animation:draw .9s var(--ease) forwards}
+.ok-ic path{stroke:var(--ink);stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:40;stroke-dashoffset:40;animation:draw .5s .7s var(--ease) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.done .en{text-align:center}
+.done h2{font-size:clamp(25px,5vw,32px);line-height:1.3;font-weight:600;margin:8px 0 10px}
+.done>p{color:var(--mut);font-size:15px}
+.done>p b{white-space:nowrap;color:var(--ink2)}
+.rcpt{margin:26px 0 20px;background:#fff;border:1px solid var(--line);border-radius:24px;padding:18px;text-align:right}
+.rc-h{display:flex;gap:14px;align-items:center;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.rc-th{width:64px;height:76px;border-radius:14px;background:var(--tone);display:grid;place-items:center;flex:none}
+.rc-th .cs{width:42%}
+.rc-h b{display:block;font-size:16px}
+.rc-h small{color:var(--mut);font-size:13px}
+.rc-rows{display:grid;gap:10px;padding-top:14px;font-size:14px}
+.rc-rows .row{display:flex;justify-content:space-between;gap:16px}
+.rc-rows .row span:first-child{color:var(--mut)}
+.rc-rows .row span:last-child{font-weight:500;text-align:left}
+.rc-rows .tot{border-top:1px dashed #cfc5b4;padding-top:12px;font-size:16px}
+.rc-rows .tot b{font-size:20px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:6px 0 28px;text-align:center}
+.step{font-size:12.5px;color:var(--mut);line-height:1.45}
+.step i{width:38px;height:38px;border-radius:50%;margin:0 auto 8px;display:grid;place-items:center;background:var(--goldsoft);color:#8a6a37;font-style:normal;font-weight:600}
+.step:first-child i{background:var(--ink);color:var(--gold2)}
+.demo-note{margin-top:18px;font-size:12px;color:#a39a8d}
+</style>
+</head>
+<body>
+
+<div class="bar" dir="ltr" aria-label="عروض">
+  <div class="bar-track">
+    <span dir="rtl">التوصيل إلى 58 ولاية</span><span dir="rtl">الدفع عند الاستلام</span><span dir="rtl">استبدال مجاني خلال 7 أيام</span><span dir="rtl">واقي شاشة بـ 500 دج فقط مع أي جراب</span>
+    <span dir="rtl">التوصيل إلى 58 ولاية</span><span dir="rtl">الدفع عند الاستلام</span><span dir="rtl">استبدال مجاني خلال 7 أيام</span><span dir="rtl">واقي شاشة بـ 500 دج فقط مع أي جراب</span>
+    <span dir="rtl">التوصيل إلى 58 ولاية</span><span dir="rtl">الدفع عند الاستلام</span><span dir="rtl">استبدال مجاني خلال 7 أيام</span><span dir="rtl">واقي شاشة بـ 500 دج فقط مع أي جراب</span>
+    <span dir="rtl">التوصيل إلى 58 ولاية</span><span dir="rtl">الدفع عند الاستلام</span><span dir="rtl">استبدال مجاني خلال 7 أيام</span><span dir="rtl">واقي شاشة بـ 500 دج فقط مع أي جراب</span>
+  </div>
+</div>
+
+<header class="hdr" id="top">
+  <div class="wrap hdr-in">
+    <a href="#top" class="logo" dir="ltr" aria-label="Smartphone Luxe"><span class="l1">SMARTPHONE</span><span class="l2">Luxe</span></a>
+    <nav class="nav" aria-label="القائمة الرئيسية">
+      <a href="#collection">المجموعة</a><a href="#finder">حسب الهاتف</a><a href="#why">لماذا نحن</a><a href="#faq">الأسئلة الشائعة</a>
+    </nav>
+    <div class="hdr-act">
+      <a class="ibtn" href="#finder" aria-label="ابحث عن هاتفك"><i data-i="search"></i></a>
+      <a class="pill-btn" href="#contact"><i data-i="chat"></i><span>تواصل معنا</span></a>
+      <button class="ibtn menu-btn" id="menuBtn" aria-label="القائمة" aria-expanded="false"><i data-i="menu"></i></button>
+    </div>
+  </div>
+  <div class="mnav" id="mnav" hidden>
+    <a href="#collection">المجموعة <i data-i="arrowL"></i></a>
+    <a href="#finder">ابحث حسب هاتفك <i data-i="arrowL"></i></a>
+    <a href="#why">لماذا Smartphone Luxe <i data-i="arrowL"></i></a>
+    <a href="#faq">الأسئلة الشائعة <i data-i="arrowL"></i></a>
+    <a href="#contact">تواصل معنا <i data-i="arrowL"></i></a>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-card">
+        <div class="hero-copy">
+          <div class="eyebrow">مجموعة خريف 2026</div>
+          <h1>هاتفك يستحقّ<br>لمسة <em>فخامة.</em></h1>
+          <p class="lead">جرابات مختارة بعناية لأحدث الهواتف — خامات راقية، حماية حقيقية، وتوصيل إلى باب بيتك في كل الولايات.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-gold" href="#collection">تسوّق المجموعة <i data-i="arrowL"></i></a>
+            <a class="btn btn-ghost" href="#finder">اختر هاتفك</a>
+          </div>
+          <div class="hero-pts">
+            <span><i data-i="cash"></i>الدفع عند الاستلام</span>
+            <span><i data-i="truck"></i>توصيل 24–72 ساعة</span>
+            <span><i data-i="refresh"></i>استبدال مجاني</span>
+          </div>
+        </div>
+        <div class="hv" aria-hidden="true">
+          <div class="hv-glow"></div><div class="hv-ring r1"></div><div class="hv-ring r2"></div>
+          <div class="hv-c c1" id="h1"></div><div class="hv-c c2" id="h2"></div><div class="hv-c c3" id="h3"></div>
+          <div class="hv-chip k2"><i data-i="sparkle"></i><div><b>Heritage Leather</b><small>جلد طبيعي · جديد</small></div></div>
+          <div class="hv-chip k1"><i data-i="truck"></i><div><b>توصيل إلى 58 ولاية</b><small>للمنزل أو لمكتب التوصيل</small></div></div>
+        </div>
+      </div>
+      <div class="brands-strip"><span>متوفّر لـ</span><b>IPHONE</b><b>SAMSUNG</b><b>XIAOMI</b><b>OPPO</b><b>REALME</b></div>
+    </div>
+  </section>
+
+  <!-- FINDER -->
+  <section class="sec" id="finder" style="padding-bottom:0">
+    <div class="wrap">
+      <div class="finder rv">
+        <div class="f-copy">
+          <span class="kicker">FIND YOUR FIT</span>
+          <h2>ابحث عن جراب هاتفك</h2>
+          <p>اختر الماركة ثم الموديل — نعرض لك فقط الجرابات المتوافقة مع هاتفك.</p>
+        </div>
+        <div>
+          <div class="chips" id="brandChips"></div>
+          <div class="chips models" id="modelChips"></div>
+          <div class="f-status" id="fStatus" hidden></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLLECTION -->
+  <section class="sec" id="collection">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="kicker">THE COLLECTION</span><h2>المجموعة</h2></div>
+        <div class="grid-meta" id="gridMeta"></div>
+      </div>
+      <div class="chips cats" id="catChips"></div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <!-- FEATURE -->
+  <section class="wrap">
+    <div class="feature rv">
+      <div class="f-vis"><div class="pulse"></div><div class="pulse p2"></div><div class="cs" id="featCase"></div></div>
+      <div class="f-copy">
+        <span class="kicker" style="color:var(--gold2)">BEST SELLER</span>
+        <h2>شفاف كريستال<br>MagSafe</h2>
+        <p>يُظهر لون هاتفك الأصلي كما هو، ويبقى شفافاً مع الوقت — مع مغناطيس قوي يثبّت الشاحن اللاسلكي والحامل في السيارة.</p>
+        <ul class="ticks">
+          <li><span class="t"><i data-i="check"></i></span>طبقة مضادة للاصفرار</li>
+          <li><span class="t"><i data-i="check"></i></span>حواف مرتفعة تحمي الكاميرا والشاشة</li>
+          <li><span class="t"><i data-i="check"></i></span>متوافق مع الشحن اللاسلكي</li>
+        </ul>
+        <a class="btn btn-gold" href="#p/crystal-magsafe">اطلبه الآن — 1,900 دج <i data-i="arrowL"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <section class="sec" id="why">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <div><span class="kicker">WHY LUXE</span><h2>تسوّق بثقة تامة</h2></div>
+        <p>نهتم بكل تفصيلة — من اختيار الخامة حتى وصول الطرد إلى يدك.</p>
+      </div>
+      <div class="trust rv">
+        <div class="tr"><div class="ti"><i data-i="cash"></i></div><b>الدفع عند الاستلام</b><p>لا تدفع أي دينار قبل أن يصلك طلبك وتراه بعينك.</p></div>
+        <div class="tr"><div class="ti"><i data-i="truck"></i></div><b>توصيل لـ 58 ولاية</b><p>إلى باب المنزل أو أقرب مكتب توصيل، خلال 24 إلى 72 ساعة.</p></div>
+        <div class="tr"><div class="ti"><i data-i="refresh"></i></div><b>استبدال مجاني</b><p>الجراب لا يناسب هاتفك؟ نستبدله مجاناً خلال 7 أيام.</p></div>
+        <div class="tr"><div class="ti"><i data-i="shield"></i></div><b>جودة مضمونة</b><p>كل قطعة تُفحص يدوياً قبل الشحن لضمان الجودة.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="sec" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head rv"><div><span class="kicker">REVIEWS</span><h2>ماذا يقول زبائننا</h2></div><p>أمثلة توضيحية — تُستبدل بآراء الزبائن الحقيقية عند الإطلاق.</p></div>
+      <div class="revs rv">
+        <div class="rev"><div class="stars" data-stars></div><q>الجراب أجمل من الصور، والتوصيل وصلني في يومين. الجودة ممتازة بصح.</q><div class="who"><span class="av">أ</span><div><b>أمينة</b><small>وهران · Crystal MagSafe</small></div></div></div>
+        <div class="rev"><div class="stars" data-stars></div><q>طلبت Armor Pro لـ Galaxy S25 Ultra — الحماية قوية والكاميرا محمية تماماً. أنصح به.</q><div class="who"><span class="av">ك</span><div><b>كريم</b><small>سطيف · Armor Pro</small></div></div></div>
+        <div class="rev"><div class="stars" data-stars></div><q>الجلد فاخر والخياطة نظيفة، يبان غالي فاليد. أكيد نعاود نطلب.</q><div class="who"><span class="av">س</span><div><b>سارة</b><small>الجزائر العاصمة · Heritage Leather</small></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec" id="faq" style="padding-top:0">
+    <div class="wrap faq-grid">
+      <div class="rv"><span class="kicker">FAQ</span><h2 class="h2">أسئلة شائعة</h2><p style="color:var(--mut);margin-top:10px">لم تجد إجابتك؟ راسلنا وسنرد عليك في أقرب وقت.</p></div>
+      <div class="faq rv">
+        <details open><summary>كيف أطلب؟<span class="pm"><i data-i="plus"></i></span></summary><p>اختر الجراب، حدّد موديل هاتفك واللون، ثم املأ الاسم واللقب ورقم الهاتف والولاية والبلدية. نتصل بك لتأكيد الطلب ثم نشحنه مباشرة.</p></details>
+        <details><summary>متى يصلني الطلب؟<span class="pm"><i data-i="plus"></i></span></summary><p>عادةً بين 24 و72 ساعة حسب ولايتك، سواء للمنزل أو لمكتب التوصيل.</p></details>
+        <details><summary>هل أدفع قبل الاستلام؟<span class="pm"><i data-i="plus"></i></span></summary><p>لا. الدفع يكون نقداً عند استلام الطرد فقط.</p></details>
+        <details><summary>ماذا لو لم يناسب الجراب هاتفي؟<span class="pm"><i data-i="plus"></i></span></summary><p>نستبدله لك مجاناً خلال 7 أيام من الاستلام، بشرط أن يكون بحالته الأصلية.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="wrap" id="contact">
+    <div class="contact rv">
+      <div><h2>لم تجد موديل هاتفك؟</h2><p>راسلنا على واتساب أو إنستغرام — نوفّر جرابات لأغلب الموديلات خلال أيام.</p></div>
+      <div class="acts"><a class="btn btn-dark" href="#contact"><i data-i="chat"></i>راسلنا على واتساب</a><a class="btn btn-line" href="#contact"><i data-i="phone"></i>اتصل بنا</a></div>
+    </div>
+  </section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div>
+        <a href="#top" class="logo" dir="ltr"><span class="l1">SMARTPHONE</span><span class="l2">Luxe</span></a>
+        <p>جرابات وإكسسوارات هواتف فاخرة — توصيل إلى كل الولايات والدفع عند الاستلام.</p>
+        <div class="soc"><a href="#contact" aria-label="Instagram"><i data-i="insta"></i></a><a href="#contact" aria-label="Facebook"><i data-i="fb"></i></a><a href="#contact" aria-label="TikTok"><i data-i="music"></i></a></div>
+      </div>
+      <div><h4>المتجر</h4><ul><li><a href="#collection">كل الجرابات</a></li><li><a href="#finder">حسب الهاتف</a></li><li><a href="#p/crystal-magsafe">MagSafe</a></li><li><a href="#p/heritage-leather">الجلد الفاخر</a></li></ul></div>
+      <div><h4>المساعدة</h4><ul><li><a href="#faq">الأسئلة الشائعة</a></li><li><a href="#why">التوصيل والاستبدال</a></li><li><a href="#contact">تتبّع طلبك</a></li></ul></div>
+      <div><h4>تواصل</h4><ul><li>واتساب: 05XX XX XX XX</li><li>من السبت إلى الخميس</li><li>9:00 — 20:00</li></ul></div>
+    </div>
+    <div class="ftr-bottom"><span>© 2026 Smartphone Luxe — جميع الحقوق محفوظة</span><span>نسخة عرض أولية (Demo)</span></div>
+  </div>
+</footer>
+
+<!-- PRODUCT SHEET -->
+<div class="sheet" id="sheet" hidden>
+  <div class="sheet-bg" data-close></div>
+  <div class="sheet-panel" id="panel" role="dialog" aria-modal="true" aria-label="تفاصيل المنتج"></div>
+</div>
+
+<script>
+/* ================= DATA ================= */
+const DZ = [["01","أدرار",["أدرار","أولاد أحمد تيمي","أولف","إن زغمير","اقبلي","السبع","بودة","تامست","تامنطيط","تسابيت","تيت","تيمقتن","رقان","زاوية كنتة","سالي","فنوغيل"]],["02","الشلف",["أبو الحسن","أم الدروع","أولاد بن عبد القادر","أولاد عباس","أولاد فارس","الأبيض مجاجة","الحجاج","الزبوجة","الشطية","الشلف","الصبحة","الظهرة","الكريمية","المرسى","الهرانفة","بريرة","بنايرية","بني بوعتاب","بني حواء","بني راشد","بوزغاية","بوقادير","تاجنة","تاوقريت","تلعصة","تنس","حرشون","سنجاس","سيدي عبد الرحمن","سيدي عكاشة","عين مران","مصدق","وادي الفضة","وادي سلي","وادي قوسين"]],["03","الأغواط",["أفلو","الأغواط","البيضاء","الحاج مشري","الحويطة","الخنق","العسافية","الغيشة","بريدة","بن ناصر بن شهرة","تاجرونة","تاجموت","تاويالة","حاسي الدلاعة","حاسي الرمل","سبقاق","سيدي بوزيد","سيدي مخلوف","عين سيدي علي","عين ماضي","قصر الحيران","قلتة سيدي سعد","وادي مرة","وادي مزي"]],["04","أم البواقي",["أم البواقي","أولاد حملة","أولاد زواي","أولاد قاسم","البلالة","الجازية","الحرملية","الرحية","الزرق","الضلعة","العامرية","الفجوج بوغرارة سعودي","بئر الشهداء","بحير الشرقي","بريش","سوق نعمان","سيقوس","عين البيضاء","عين الديس","عين الزيتون","عين ببوش","عين فكرون","عين كرشة","عين مليلة","فكيرينة","قصر الصباحي","مسكيانة","هنشير تومغني","وادي نيني"]],["05","باتنة",["أريس","أولاد سلام","أولاد سي سليمان","أولاد عمار","أولاد عوف","أولاد فاضل","إشمول","إمدوكل","إينوغيسن","الجزار","الحاسي","الرحبات","الشمرة","القصبات","القيقبة","المعذر","باتنة","بريكة","بني فضالة الحقانية","بوزينة","بولهيلات","بومقر","بومية","بيطام","تازولت","تاكسلانت","تالخمت","تغرغار","تكوت","تيغانمين","تيلاطو","تيمقاد","ثنية العابد","جرمة","حيدوسة","رأس العيون","زانة البيضاء","سريانة","سفيان","سقانة","شير","عزيل عبد القادر","عين التوتة","عين جاسر","عين ياقوت","عيون العصافير","غسيرة","فسديس","فم الطوب","قصر بلزمة","كيمل","لارباع","لازرو","لمسان","مروانة","معافة","منعة","نقاوس","وادي الشعبة","وادي الطاقة","وادي الماء"]],["06","بجاية",["أدكار","أقبو","أكفادو","أمالو","أميزور","أوزلاقن","أوقاس","أيت إسماعيل","أيت رزين","إغيل علي","اغرم","الفلاي","القصر","بجاية","برباشة","بني جليل","بني كسيلة","بني معوش","بني مليكش","بو جليل","بوحمزة","بوخليفة","تازمالت","تاسكريوت","تالة حمزة","تامريجت","تامقرة","تاوريرت إغيل","توجة","تيزي نبربر","تيشي","تيفرة","تيمزريت","تينبدار","خراطة","درقينة","ذراع القايد","سمعون","سوق اوفلا","سوق لإثنين","سيدي عياد","سيدي عيش","شلاطة","شميني","صدوق","طيبان","فرعون","فناية الماثن","كنديرة","مالبو","مسيسنة","وادي غير"]],["07","بسكرة",["أورلال","أوماش","الحاجب","الحوش","الغروس","الفيض","القنطرة","المزيرعة","الوطاية","برانيس","برج بن عزوز","بسكرة","بوشقرون","جمورة","خنقة سيدي ناجي","زريبة الوادي","سيدي عقبة","شتمة","طولقة","عين الناقة","عين زعطوط","فوغالة","ليشانة","ليوة","مخادمة","مشونش","مليلي"]],["08","بشار",["العبادلة","القنادسة","المريجة","بشار","بني ونيف","بوكايس","تاغيت","تبلبالة","عرق فراج","لحمر","مشرع هواري بومدين","موغل"]],["09","البليدة",["أولاد يعيش","الأربعاء","البليدة","الشبلي","الشريعة","الشفة","الصومعة","العفرون","اولاد سلامة","بن خليل","بني تامو","بني مراد","بوعرفة","بوعينان","بوفاريك","بوقرة","جبابرة","حمام ملوان","صوحان","عين الرمانة","قرواو","مفتاح","موزاية","وادي العلايق","وادي جر"]],["10","البويرة",["آث  منصور","أعمر","أغبالو","أمشدالة","أهل القصر","أولاد راشد","أيت لعزيز","الأخضرية","الأسنام","البويرة","الحاكمية","الحجرة الزرقاء","الخبوزية","الدشمية","العجيبة","المعمورة","المقراني","الهاشمية","بئر غبالو","برج أوخريص","بشلول","بودربالة","بوكرم","تاغزوت","تاقديت","جباحية","حنيف","حيزر","ديرة","روراوة","ريدان","زبربر","سحاريج","سور الغزلان","سوق الخميس","شرفة","عين الترك","عين الحجر","عين العلوي","عين بسام","قادرية","قرومة","مزدور","معلة","وادي البردي"]],["11","تمنراست",["أدلس","ابلسة","تاظروك","تمنراست","عين امقل"]],["12","تبسة",["أم علي","الحمامات","الحويجبات","الشريعة","العقلة","العقلة المالحة","العوينات","الكويف","الماء الابيض","المريج","المزرعة","الونزة","بئر الذهب","بئر العاتر","بئر مقدم","بجن","بكارية","بوخضرة","بولحاف الدير","تبسة","ثليجان","سطح قنطيس","صفصاف الوسرى","عين الزرقاء","فركان","قريقر","مرسط","نقرين"]],["13","تلمسان",["أولاد رياح","أولاد ميمون","البويهي","الحناية","الرمشي","السواحلية","السواني","العريشة","العزايل","الغزوات","الفحول","القور","باب العسة","بن سكران","بني بهدل","بني بوسعيد","بني خلاد","بني سنوس","بني صميل","بني مستر","بني وارسوس","بوحلو","تلمسان","تيانت","تيرني بني هديل","جبالة","حمام بوغرارة","دار يغمراسن","زناتة","سبدو","سبعة شيوخ","سوق الثلاثاء","سيدي الجيلالي","سيدي العبدلي","سيدي مجاهد","شتوان","صبرة","عمير","عين الكبيرة","عين النحالة","عين تالوت","عين غرابة","عين فتاح","عين فزة","عين يوسف","فلاوسن","مرسى بن مهيدي","مسيردة الفواقة","مغنية","منصورة","ندرومة","هنين","وادي الخضر"]],["14","تيارت",["الرحوية","الرشايقة","السبت","السبعين","السوقر","الفايجة","الناظورة","النعيمة","بوقرة","تاقدمت","تخمرت","توسنينة","تيارت","تيدة","جبيلات الرصفاء","جيلالي بن عمار","حمادية","دحموني","زمالة  الأمير عبد القادر","سرغين","سي عبد الغني","سيدي بختي","سيدي حسني","سيدي عبد الرحمن","سيدي علي ملال","شحيمة","عين الحديد","عين الذهب","عين بوشقيف","عين دزاريت","عين كرمس","فرندة","قرطوفة","قصر الشلالة","مادنة","مدروسة","مدريسة","مشرع الصفا","مغيلة","ملاكو","مهدية","وادي ليلي"]],["15","تيزي وزو",["أبي يوسف","أزفون","أسي يوسف","أغريب","أقرو","أقني قغران","أيت  أومالو","أيت بــوادو","أيت بومهدي","أيت تودرت","أيت خليلي","أيت شافع","أيت عقـواشة","أيت عيسى ميمون","أيت محمود","أيت يحي موسى","أيت يحيى","إبودرارن","إعــكورن","إفــرحــونان","إفليـــسن","إمســوحال","إيجــار","إيرجـــن","إيفيغاء","إيلـيــلتـن","إيلولة أومـــالو","اقبيل","الأربعــاء ناث إيراثن","بنــــي زمنزار","بني دوالة","بني زيكــي","بني عيسي","بني يني","بوجيمة","بوزقــن","بوغني","بونوح","تادمايت","تيرمتين","تيزي راشد","تيزي غنيف","تيزي نثلاثة","تيزي وزو","تيقـزيرت","تيمـيزار","ذراع الميزان","ذراع بن خدة","زكري","سوق الإثنين","سيدي نعمان","صوامـــع","عزازقة","عين الحمام","عين الزاوية","فريحة","فريقات","ماكودة","مشطراس","معـــاتقة","مقــلع","مكيرة","ميزرانـــة","واسيف","واضية","واقنون","يطــافن"]],["16","الجزائر",["ابن عكنون","الابيار","الجزائر الوسطى","الحراش","الحمامات","الخرايسية","الدار البيضاء","الدرارية","الدويرة","الرايس حميدو","الرحمانية","الرويبة","السحاولة","الشراقة","العاشور","القبة","القصبة","الكاليتوس","المحمدية","المدنية","المرادية","المرسى","المعالمة","المغارية","اولاد شبل","اولاد فايت","بئر توتة","بئر خادم","بئر مراد رايس","باب الزوار","باب الوادي","بابا حسن","باش جراح","براقي","برج البحري","برج الكيفان","بني مسوس","بوروبة","بوزريعة","بولوغين بن زيري","تسالة المرجة","جسر قسنطينة","حسين داي","حيدرة","دالي ابراهيم","رغاية","زرالدة","سطاوالي","سويدانية","سيدي امحمد","سيدي موسى","عين بنيان","عين طاية","محمد بلوزداد","هراوة","وادي السمار","وادي قريش"]],["17","الجلفة",["أم العظام","الادريسية","الجلفة","الخميس","الشارف","القديد","بن يعقوب","بنهار","بويرة الأحداب","بيرين","تعظميت","حاسي العش","حاسي بحبح","حاسي فدول","حد الصحاري","دار الشيوخ","دلدول","دويس","زعفران","زكار","سد الرحال","سلمانة","سيدي بايزيد","سيدي لعجال","عمورة","عين الإبل","عين الشهداء","عين فقه","عين معبد","عين وسارة","فيض البطمة","قرنيني","قطارة","مجبارة","مسعد","مليليحة"]],["18","جيجل",["أراقن سويسي","أولاد رابح","أولاد يحيى خدروش","الامير عبد القادر","الجمعة بني حبيبي","السطارة","الشحنة","الشقفة","الطاهير","العنصر","العوانة","القنار نشفي","الميلية","برج الطهر","بودريعة بني  ياجيس","بوراوي بلهادف","بوسيف أولاد عسكر","تاكسنة","جيجل","جيملة","خيري واد عجول","زيامة منصورية","سلمى بن زيادة","سيدي عبد العزيز","سيدي معروف","غبالة","قاوس","وجانة"]],["19","سطيف",["أوريسيا","أولاد تبان","أولاد سي أحمد","أولاد صابر","أولاد عدوان","أيت نوال مزادة","التلة","الحامة","الدهامشة","الرصفة","الطاية","العلمة","الولجة","ايت تيزي","بئر العرش","بئر حدادة","بابور","بازر سكرة","بلاعة","بني شبانة","بني عزيز","بني فودة","بني موحلي","بني ورتيلان","بني وسين","بوسلام","بوطالب","بوعنداس","بوقاعة","بيضاء برج","تاشودة","تالة إيفاسن","تيزي نبشار","جميلة","حربيل","حمام السخنة","حمام قرقور","ذراع قبيلة","سرج الغول","سطيف","صالح باي","عموشة","عين أرنات","عين أزال","عين الحجر","عين الروى","عين السبت","عين الكبيرة","عين عباسة","عين لقراج","عين ولمان","قجال","قصر الابطال","قلال","قلتة زرقاء","قنزات","ماوكلان","مزلوق","معاوية","واد البارد"]],["20","سعيدة",["أولاد إبراهيم","أولاد خالد","الحساسنة","المعمورة","تيرسين","دوي ثابت","سعيدة","سيدي احمد","سيدي بوبكر","سيدي عمر","عين الحجر","عين السخونة","عين السلطان","مولاي العربي","هونت","يوب"]],["21","سكيكدة",["أم الطوب","أولاد حبابة","أولاد عطية","الحدائق","الحروش","الزيتونة","السبت","الشرايع","الغدير","القل","الكركرة","المرسى","الولجة بولبلوط","بكوش لخضر","بن عزوز","بني بشير","بني زيد","بني ولبان","بوشطاطة","بين الويدان","تمالوس","جندل سعدي محمد","حمادي كرومة","خناق مايو","رمضان جمال","زردازة","سكيكدة","سيدي مزغيش","صالح بو الشعور","عزابة","عين بوزيان","عين زويت","عين شرشار","عين قشرة","فلفلة","قنواع","مجاز الدشيش","وادي الزهور"]],["22","سيدي بلعباس",["الحصيبة","السهالة الثورة","الضاية","العمارنة","بئر الحمام","بضرابين المقراني","بلعربي","بن باديس","بن عشيبة شلية","بوجبهة البرج","بوخنفيس","تاودموت","تسالة","تغاليمت","تفسور","تلاغ","تلموني","تنيرة","حاسي دحو","حاسي زهانة","راس الماء","رجم دموش","زروالة","سفيزف","سيدي ابراهيم","سيدي بلعباس","سيدي حمادوش","سيدي خالد","سيدي دحو الزاير","سيدي شعيب","سيدي علي بن يوب","سيدي علي بوسيدي","سيدي لحسن","سيدي يعقوب","شيطوان البلايلة","طابية","عين أدن","عين البرد","عين الثريد","عين تندمين","عين قادة","لمطار","مرحوم","مرين","مزاورو","مسيد","مصطفى بن ابراهيم","مكدرة","مولاي سليسن","وادي السبع","وادي تاوريرة","وادي سفيون"]],["23","عنابة",["البوني","التريعات","الحجار","الشرفة","العلمة","برحال","سرايدي","سيدي عمار","شطايبي","عنابة","عين الباردة","واد العنب"]],["24","قالمة",["الدهوارة","الركنية","الفجوج","برج صباط","بلخير","بن جراح","بني مزلين","بوحشانة","بوحمدان","بوشقوف","بوعاتي محمود","بومهرة أحمد","تاملوكة","جبالة الخميسي","حمام النبايل","حمام دباغ","رأس العقبة","سلاوة عنونة","عين العربي","عين بن بيضاء","عين رقادة","عين صندل","عين مخلوف","قالمة","قلعة بوصبع","لخزارة","مجاز الصفاء","مجاز عمار","نشماية","هواري بومدين","هيليوبوليس","وادي الزناتي","وادي الشحم","وادي فراغة"]],["25","قسنطينة",["أبن باديس الهرية","أولاد رحمون","ابن زياد","الخروب","بني حميدان","بوجريو مسعود","حامة بوزيان","ديدوش مراد","زيغود يوسف","عين السمارة","عين عبيد","قسنطينة"]],["26","المدية",["أم الجليل","أولاد إبراهيم","أولاد امعرف","أولاد بوعشرة","أولاد دايد","أولاد عنتر","أولاد هلال","البرواقية","الحمدانية","الحوضان","الربعية","الزبيرية","السانق","السواقي","الشهبونية","العزيزية","العمارية","العوينات","العيساوية","القلب الكبير","الكاف الاخضر","المدية","بئر بن عابد","بعطة","بن شكاو","بني سليمان","بوسكن","بوشراحيل","بوعيش","بوعيشون","بوغار","بوغزول","تابلاط","تفراوت","تمسقيدة","تيزي مهدي","ثلاث دوائر","جواب","حناشة","خمس جوامع","دراق","ذراع السمار","سدراية","سغوان","سي المحجوب","سيدي الربيع","سيدي دامد","سيدي زهار","سيدي زيان","سيدي نعمان","شلالة العذاورة","شنيقل","عزيز","عوامري","عين اقصير","عين بوسيف","قصر البخاري","مجبر","مزغنة","مغراوة","مفاتحة","ميهوب","وادي حربيل","وزرة"]],["27","مستغانم",["أولاد بوغالم","أولاد مع الله","الحسيان (بني ياحي","السوافلية","الطواهرية","بن عبد المالك رمضان","بوقيراط","تزقايت","حاسي ماماش","حجاج","خضرة","خير الدين","ستيدية","سور","سيدي بلعطار","سيدي علي","سيدي لخضر","سيرات","صفصاف","صيادة","عشعاشة","عين بودينار","عين تادلس","عين سيدي الشريف","عين نويسي","فرناقة","ماسرة","مزغران","مستغانم","منصورة","نكمارية","وادي الخير"]],["28","المسيلة",["أولاد دراج","أولاد سليمان","أولاد سيدي ابراهيم","أولاد عدي لقبالة","أولاد ماضي","أولاد منصور","الحوامد","السوامع","المسيلة","المطارفة","المعاضيد","الهامل","امجدل","بئر فضة","برهوم","بلعايبة","بن زوه","بن سرور","بني يلمان","بوسعادة","بوطي السايح","تارمونت","تامسة","جبل مساعد","حمام الضلعة","خبانة","خطوطي سد الجير","دهاهنة","زرزور","سليم","سيدي امحمد","سيدي عامر","سيدي عيسى","سيدي هجرس","شلال","عين الحجل","عين الخضراء","عين الريش","عين الملح","عين فارس","محمد بوضياف","مسيف","معاريف","مقرة","مناعة","ولتام","ونوغة"]],["29","معسكر",["البرج","الحشم","السهايلية","الشرفاء","العلايمية","الغمري","القرط","القطنة","القعدة","المأمونية","المحمدية","المطمور","المنور","بنيان","بوحنيفية","بوهني","تيزي","تيغنيف","حسين","خلوية","رأس عين عميروش","زلامطة","زهانة","سجرارة","سيدي بوسعيد","سيدي عبد الجبار","سيدي عبد المومن","سيدي قادة","سيق","عقاز","عوف","عين أفرص","عين فارس","عين فراح","عين فكان","غروس","غريس","فراقيق","فروحة","قرجوم","ماقضة","ماوسة","معسكر","مقطع الدوز","نسمط","وادي الأبطال","وادي التاغية"]],["30","ورقلة",["البرمة","الرويسات","انقوسة","حاسي بن عبد الله","حاسي مسعود","سيدي خويلد","عين البيضاء","ورقلة"]],["31","وهران",["أرزيو","البراية","السانية","العنصر","الكرمة","المرسى الكبير","بئر الجير","بطيوة","بن فريحة","بوتليليس","بوسفر","بوفاتيس","حاسي بن عقبة","حاسي بونيف","حاسي مفسوخ","سيدي الشحمي","سيدي بن يبقى","طفراوي","عين البية","عين الترك","عين الكرمة","قديل","مرسى الحجاج","مسرغين","وادي تليلات","وهران"]],["32","البيض",["اربوات","الأبيض سيدي الشيخ","البنود","البيض","الخيثر","الشقيق","الغاسول","الكاف الأحمر","المحرة","بريزينة","بوسمغون","بوعلام","بوقطب","توسمولين","رقاصة","ستيتن","سيدي سليمان","سيدي طيفور","سيدي عامر","شلالة","عين العراك","كراكدة"]],["33","إليزي",["إن أمناس","إيليزي","برج عمر إدريس","دبداب"]],["34","برج بوعريريج",["أولاد أبراهم","أولاد دحمان","أولاد سيدي ابراهيم","الحمادية","الرابطة","العش","العناصر","القصور","القلة","الماين","المنصورة","المهير","الياشير","بئر قاصد علي","برج الغدير","برج بوعريرج","برج زمورة","بليمور","بن داود","تسامرت","تفرق","تقلعيت","تيكستار","ثنية النصر","جعافرة","حرازة","حسناوة","خليل","رأس الوادي","سيدي أمبارك","عين تاغروت","عين تسرة","غيلاسة","مجانة"]],["35","بومرداس",["أعفير","أولاد عيسى","أولاد موسى","أولاد هداج","الاربعطاش","الثنية","الخروبة","الناصرية","برج منايل","بغلية","بن شود","بني عمران","بودواو","بودواو البحري","بوزقزة قدارة","بومرداس","تاورقة","تيجلابين","تيمزريت","جنات","حمادي","خميس الخشنة","دلس","زموري","سوق الحد","سي مصطفى","سيدي داود","شعبة العامر","عمال","قورصو","لقاطة","يسر"]],["36","الطارف",["البسباس","الذرعـان","الزيتونة","السوارخ","الشافية","الشط","الطارف","العيون","القالة","بحيرة الطيور","بريحان","بن مهيدي","بوثلجة","بوحجار","بوقوس","حمام بني صالح","رمل السوق","زريزر","شبيطة مختار","شحاني","عصفور","عين العسل","عين الكرمة","وادي الزيتون"]],["37","تندوف",["أم العسل","تندوف"]],["38","تيسمسيلت",["أولاد بسام","الأربعاء","الأزهرية","العيون","المعاصم","الملعب","اليوسفية","برج الأمير عبد القادر","برج بونعامة","بني شعيب","بني لحسن","بوقائد","تملاحت","تيسمسيلت","ثنية الاحد","خميستي","سيدي العنتري","سيدي بوتوشنت","سيدي سليمان","سيدي عابد","عماري","لرجام"]],["39","الوادي",["البياضة","الحمراية","الدبيلة","الرباح","الرقيبة","الطالب العربي","الطريفاوي","العقلة","المقرن","النخلة","الوادي","اميه وانسة","بن  قشة","تغزوت","حاسي خليفة","حساني عبد الكريم","دوار الماء","سيدي عون","قمار","كوينين","وادي العلندة","ورماس"]],["40","خنشلة",["أولاد رشاش","الحامة","الرميلة","المحمل","الولجة","انسيغة","بابار","بغاي","بوحمامة","تاوزيانت","جلال","خنشلة","خيران","ششار","شلية","طامزة","عين الطويلة","قايس","متوسة","مصارة","يابوس"]],["41","سوق أهراس",["أم العظايم","أولاد إدريس","أولاد مومن","الحدادة","الحنانشة","الخضارة","الدريعة","الراقوبة","الزعرورية","الزوابي","المراهنة","المشروحة","بئر بوحوش","تاورة","ترقالت","تيفاش","خميسة","سافل الويدان","سدراتة","سوق أهراس","سيدي فرج","عين الزانة","عين سلطان","مداوروش","وادي الكبريت","ويلان"]],["42","تيبازة",["أحمر العين","أغبال","الأرهاط","الحطاطبة","الداموس","الشعيبة","القليعة","الناظور","بني ميلك","بواسماعيل","بورقيقة","بوهارون","تيبازة","حجرة النص","حجوط","خميستي","دواودة","سيدي راشد","سيدي سميان","سيدي عامر","سيدي غيلاس","شرشال","عين تاقورايت","فوكة","قوراية","مراد","مسلمون","مناصر"]],["43","ميلة",["أحمد راشدي","أولاد اخلوف","اعميرة اراس","التلاغمة","الرواشد","الشيقارة","العياضي برباس","القرارم قوقة","بن يحي عبد الرحمن","بوحاتم","تاجنانت","ترعي باينان","تسالة لمطاعي","تسدان حدادة","تيبرقنت","حمالة","دراحي بوصلاح","زغاية","سيدي خليفة","سيدي مروان","شلغوم العيد","عين البيضاء أحريش","عين التين","عين الملوك","فرجيوة","مشيرة","ميلة","مينار زارزة","وادي العثمانية","وادي النجاء","وادي سقان","يحي بني قشة"]],["44","عين الدفلة",["الحسانية","الحسينية","الروينة","العامرة","العبادية","العطاف","الماين","المخاطرية","بئر ولد خليفة","بربوش","برج الأمير خالد","بطحية","بلعاص","بن علال","بوراشد","بومدفع","تاشتة زقاغة","تبركانين","جليدة","جمعة أولاد الشيخ","جندل","حمام ريغة","خميس مليانة","زدين","سيدي الأخضر","طارق بن زياد","عريب","عين الاشياخ","عين البنيان","عين التركي","عين الدفلى","عين السلطان","عين بويحيى","مليانة","واد الجمعة","وادي الشرفاء"]],["45","النعامة",["البيوض","القصدير","المشرية","النعامة","تيوت","جنين بورزق","سفيسيفة","عسلة","عين الصفراء","عين بن خليل","مغرار","مكمن بن عمار"]],["46","عين تيموشنت",["أغلال","أولاد الكيحل","أولاد بوجمعة","الأمير عبد القادر","الحساسنة","العامرية","المالح","المساعيد","بني صاف","بوزجار","تارقة","تامزورة","حاسي الغلة","حمام بوحجر","سيدي بن عدة","سيدي بومدين","سيدي صافي","سيدي ورياش","شعبة اللحم","شنتوف","عقب الليل","عين الأربعاء","عين الطلبة","عين الكيحل","عين تموشنت","وادي الصباح","وادي برقش","ولهاصة الغرابة"]],["47","غرداية",["العطف","القرارة","المنصورة","بريان","بونورة","زلفانة","سبسب","ضاية بن ضحوة","غرداية","متليلي"]],["48","غليزان",["أولاد سيدي الميهوب","أولاد يعيش","الحاسي","الحمادنة","الرمكة","القطار","القلعة","المطمر","الولجة","بلعسل بوزقزة","بن داود","بني درقن","بني زنطيس","جديوية","حد الشكالة","حمري","دار بن عبد الله","زمورة","سوق الحد","سيدي  خطاب","سيدي أمحمد بن علي","سيدي امحمد بن عودة","سيدي سعادة","سيدي لزرق","عمي موسى","عين الرحمة","عين طارق","غليزان","لحلاف","مازونة","مديونة","مرجة سيدي عابد","منداس","وادي الجمعة","وادي السلام","وادي رهيو","واريزان","يلل"]],["49","تيميمون",["أوقروت","أولاد السعيد","أولاد عيسى","المطارفة","تنركوك","تيميمون","دلدول","شروين","طالمين","قصر قدور"]],["50","برج باجي مختار",["برج باجي مختار","تيمياوين"]],["51","أولاد جلال",["أولاد جلال","الدوسن","الشعيبة","بسباس","رأس الميعاد","سيدي  خالد"]],["52","بني عباس",["أولاد خضير","إقلي","القصابي","الواتة","بن يخلف","بني عباس","تامترت","تيمودي","كرزاز"]],["53","عين صالح",["إينغر","عين صالح","فقارة الزوى"]],["54","عين قزام",["تين زواتين","عين قزام"]],["55","تقرت",["الحجيرة","الزاوية العابدية","الطيبات","العالية","المقارين","المنقر","النزلة","بلدة اعمر","بن ناصر","تبسبست","تقرت","تماسين","سيدي سليمان"]],["56","جانت",["برج الحواس","جانت"]],["57","المغير",["أم الطيور","المرارة","المغير","تندلة","جامعة","سطيل","سيدي خليل","سيدي عمران"]],["58","المنيعة",["المنيعة","حاسي الفحل","حاسي القارة"]]]; // [code, wilaya, [communes]] — 58 ولاية / 1541 بلدية
+
+const MODELS = {
+  apple:  {name:'iPhone',  list:['iPhone 17 Pro Max','iPhone 17 Pro','iPhone 17','iPhone 16 Pro Max','iPhone 16 Pro','iPhone 16','iPhone 15 Pro Max','iPhone 15','iPhone 14','iPhone 13','iPhone 11']},
+  samsung:{name:'Samsung', list:['Galaxy S25 Ultra','Galaxy S25','Galaxy A56','Galaxy A36','Galaxy A16','Galaxy A06']},
+  xiaomi: {name:'Xiaomi',  list:['Redmi Note 14 Pro','Redmi Note 14','Redmi 14C','Poco X7']},
+  oppo:   {name:'Oppo',    list:['Reno 13','Oppo A60','Oppo A3']},
+  realme: {name:'Realme',  list:['Realme 14 Pro','Realme C75','Realme C67']}
+};
+const MB = {}; for (const b in MODELS) MODELS[b].list.forEach(m => MB[m] = b);
+const POPULAR = ['iPhone 17 Pro Max','iPhone 16','iPhone 13','Galaxy S25 Ultra','Galaxy A16','Redmi Note 14'];
+
+const CATS = [['all','الكل'],['clear','شفاف'],['silicone','سيليكون'],['leather','جلد'],['protect','حماية قصوى'],['design','تصاميم']];
+
+const P = [
+ {slug:'crystal-magsafe', cat:'clear', en:'CRYSTAL MAGSAFE', name:'شفاف كريستال MagSafe', type:'clear', price:1900, old:2500, badge:'الأكثر طلباً', compat:['apple','samsung'],
+  sub:'شفافية لا تصفرّ مع الوقت ومغناطيس قوي للشحن اللاسلكي.',
+  pts:['طبقة مضادة للاصفرار','حواف مرتفعة تحمي الكاميرا والشاشة','مغناطيس قوي متوافق مع MagSafe'],
+  colors:[{n:'شفاف',phone:'#cbc3b6',tint:'rgba(255,255,255,.62)',sw:'#f4f3f1'},{n:'مدخّن',phone:'#3a3a41',tint:'rgba(28,28,34,.55)',sw:'#4a4a52'},{n:'ثلجي',phone:'#cfd6e0',tint:'rgba(248,250,255,.8)',frost:1,sw:'#e6eaf2'}]},
+ {slug:'silk-silicone', cat:'silicone', en:'SILK TOUCH', name:'سيليكون حريري', type:'solid', price:1200, old:1500, badge:'جديد', compat:['apple','samsung','xiaomi','oppo','realme'],
+  sub:'ملمس مخملي ناعم وبطانة داخلية من الألياف الدقيقة.',
+  pts:['سيليكون سائل بلمسة حريرية','بطانة ناعمة تحمي ظهر الهاتف','أزرار بنقرة دقيقة'],
+  colors:[{n:'لافندر',c:'#b6a4d8'},{n:'أخضر مريمي',c:'#a1af97'},{n:'رملي',c:'#d5bf9d'},{n:'أسود',c:'#1e1d22'},{n:'كرزي',c:'#7a1f2e'},{n:'أزرق ليلي',c:'#25314b'}]},
+ {slug:'heritage-leather', cat:'leather', en:'HERITAGE LEATHER', name:'جلد Heritage الفاخر', type:'leather', price:2600, old:3200, badge:'فاخر', compat:['apple','samsung'],
+  sub:'جلد طبيعي يكتسب طابعاً أجمل مع مرور الوقت.',
+  pts:['جلد طبيعي معالج ضد الخدوش','خياطة دقيقة بخيط مشمّع','إطار داخلي ماص للصدمات'],
+  colors:[{n:'كونياك',c:'#7b4a2b',st:'#e4c9a2',rim:'#c8a468'},{n:'أسود',c:'#1b191c',st:'#8e8578',rim:'#c8a468'},{n:'كحلي',c:'#1f2b45',st:'#cdb68e',rim:'#c8a468'}]},
+ {slug:'armor-pro', cat:'protect', en:'ARMOR PRO', name:'Armor Pro حماية قصوى', type:'armor', price:1700, old:2100, badge:'', compat:['apple','samsung','xiaomi','oppo','realme'],
+  sub:'زوايا مقوّاة بوسائد هوائية ضد السقوط والصدمات.',
+  pts:['وسائد هوائية في الزوايا الأربع','حافة مرتفعة حول الكاميرا','قبضة جانبية مانعة للانزلاق'],
+  colors:[{n:'أسود',c:'#1c1d21',f:'#34363d'},{n:'كحلي',c:'#1d283a',f:'#33435d'},{n:'زيتي',c:'#3a3e2b',f:'#565c42'}]},
+ {slug:'marble-gold', cat:'design', en:'MARBLE & GOLD', name:'رخام وذهب', type:'marble', price:1500, old:1900, badge:'', compat:['apple','samsung','xiaomi','oppo','realme'],
+  sub:'عروق ذهبية على رخام ناعم — قطعة فنية في يدك.',
+  pts:['طباعة عالية الدقة لا تبهت','لمسة لامعة بطبقة UV','نحيف وخفيف الوزن'],
+  colors:[{n:'أبيض',c:'#f3f0ea',vn:'#b8b2a8',gd:'#c6a05a'},{n:'أسود',c:'#1b1b1f',vn:'#5f5f68',gd:'#caa560'},{n:'وردي',c:'#efd9d3',vn:'#c4a59e',gd:'#c39a63'}]},
+ {slug:'carbon-fiber', cat:'protect', en:'CARBON FIBER', name:'ألياف الكربون', type:'carbon', price:1600, old:0, badge:'', compat:['apple','samsung','xiaomi','oppo','realme'],
+  sub:'نحيف جداً وصلب، بنقشة الكربون الأصلية.',
+  pts:['نقشة كربون حقيقية','سُمك 1 مم فقط','مقاوم للبصمات والخدوش'],
+  colors:[{n:'غرافيت',c:'#202126'},{n:'أزرق',c:'#1b2436'}]},
+ {slug:'wave-check', cat:'design', en:'WAVE CHECK', name:'Wave Check', type:'wave', price:1300, old:1600, badge:'ترند', compat:['apple','samsung','xiaomi','oppo','realme'],
+  sub:'النقشة المتموّجة الأكثر رواجاً هذا الموسم.',
+  pts:['ألوان باستيل لا تبهت','سيليكون مرن مقاوم للصدمات','تصميم حصري'],
+  colors:[{n:'ليلكي',a:'#c7b6ea',b:'#f7f2e8'},{n:'نعناعي',a:'#a7d6c2',b:'#f7f2e8'},{n:'وردي',a:'#f1b6c4',b:'#f9f0ea'},{n:'كراميل',a:'#c99a6b',b:'#f4e7d5'}]},
+ {slug:'stardust', cat:'design', en:'STARDUST', name:'Stardust لامع', type:'glitter', price:1400, old:0, badge:'', compat:['apple','samsung','xiaomi','oppo','realme'],
+  sub:'بريق ناعم يلتقط الضوء من كل زاوية.',
+  pts:['بريق مدمج لا يتساقط','حواف مرنة سهلة التركيب','لمعان يدوم'],
+  colors:[{n:'شمبانيا',c:'#ecd8ae',c2:'#b98f52'},{n:'وردي',c:'#f2c3ca',c2:'#c27a88'},{n:'فضي',c:'#e6e8ed',c2:'#9aa0ab'}]}
+];
+
+const UPSELL = 500;
+const FAR = ['11','33','37','50','53','54','56'];
+const SOUTH = ['01','08','30','32','39','45','47','49','51','52','55','57','58'];
+function shipFor(code){
+  if (!code) return null;
+  if (code === '16') return {home:400, desk:250};
+  if (FAR.includes(code)) return {home:1200, desk:800};
+  if (SOUTH.includes(code)) return {home:900, desk:600};
+  return {home:600, desk:400};
+}
+
+/* ================= ICONS ================= */
+const IC = {
+  search:'<circle cx="11" cy="11" r="7.5"/><path d="m20.5 20.5-4.2-4.2"/>',
+  menu:'<path d="M4 7h16M4 12h16M4 17h10"/>',
+  x:'<path d="M18 6 6 18M6 6l12 12"/>',
+  check:'<path d="M20 6 9 17l-5-5"/>',
+  plus:'<path d="M12 5v14M5 12h14"/>',
+  arrowL:'<path d="M19 12H5"/><path d="m11 18-6-6 6-6"/>',
+  arrowR:'<path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>',
+  truck:'<path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/>',
+  cash:'<rect width="20" height="12" x="2" y="6" rx="2"/><circle cx="12" cy="12" r="2.5"/><path d="M6 12h.01M18 12h.01"/>',
+  refresh:'<path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/>',
+  shield:'<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/>',
+  chat:'<path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/>',
+  phone:'<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>',
+  lock:'<rect width="18" height="11" x="3" y="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>',
+  home:'<path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .71-1.53l7-6a2 2 0 0 1 2.58 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>',
+  store:'<path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/><path d="M2 7h20"/><path d="M22 7v3a2 2 0 0 1-2 2 2.7 2.7 0 0 1-2-.9 2.7 2.7 0 0 1-2 .9 2.7 2.7 0 0 1-2-.9 2.7 2.7 0 0 1-2 .9 2.7 2.7 0 0 1-2-.9 2.7 2.7 0 0 1-2 .9 2.7 2.7 0 0 1-2-.9A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7"/>',
+  sparkle:'<path d="M9.94 15.5A2 2 0 0 0 8.5 14.06l-6.14-1.58a.5.5 0 0 1 0-.96L8.5 9.94A2 2 0 0 0 9.94 8.5l1.58-6.14a.5.5 0 0 1 .96 0l1.58 6.14a2 2 0 0 0 1.44 1.44l6.14 1.58a.5.5 0 0 1 0 .96l-6.14 1.58a2 2 0 0 0-1.44 1.44l-1.58 6.14a.5.5 0 0 1-.96 0z"/>',
+  insta:'<rect width="20" height="20" x="2" y="2" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/>',
+  fb:'<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>',
+  music:'<path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>',
+  star:'<path fill="currentColor" stroke="none" d="M11.52 2.3a.53.53 0 0 1 .96 0l2.3 4.68a2.12 2.12 0 0 0 1.6 1.16l5.16.75a.53.53 0 0 1 .3.9l-3.74 3.65a2.12 2.12 0 0 0-.61 1.88l.88 5.14a.53.53 0 0 1-.77.56l-4.62-2.43a2.12 2.12 0 0 0-1.97 0L6.4 21.01a.53.53 0 0 1-.77-.56l.88-5.14a2.12 2.12 0 0 0-.61-1.88L2.16 9.8a.53.53 0 0 1 .3-.9l5.16-.76a2.12 2.12 0 0 0 1.6-1.16z"/>'
+};
+const I = n => `<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${IC[n]}</svg>`;
+
+/* ================= HELPERS ================= */
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const fmt = n => n.toLocaleString('en-US') + ' دج';
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function hex2(n){ return n.toString(16).padStart(2,'0'); }
+function mix(a, b, t){
+  const pa = parseInt(a.slice(1),16), pb = parseInt(b.slice(1),16);
+  return '#' + [16,8,0].map(s => hex2(Math.round(((pa>>s)&255)*(1-t) + ((pb>>s)&255)*t))).join('');
+}
+function lum(h){ const n = parseInt(h.slice(1),16); return (0.299*((n>>16)&255) + 0.587*((n>>8)&255) + 0.114*(n&255))/255; }
+const mainColor = v => v.c || v.a || v.phone;
+const swColor = v => v.sw || v.c || v.a;
+const toneOf = v => mix(mainColor(v), '#f5f1ea', .82);
+function rng(seed){ let s = seed % 2147483647; if (s <= 0) s += 2147483646; return () => (s = s * 16807 % 2147483647, (s - 1) / 2147483646); }
+const pct = p => p.old ? Math.round((1 - p.price/p.old)*100) : 0;
+
+/* ================= CASE RENDERER (SVG) ================= */
+let UID = 0;
+function lens(id, cx, cy, r){
+  return `<circle cx="${cx}" cy="${cy}" r="${r}" fill="#1c1c20" stroke="#4b4b54" stroke-width="2"/>
+  <circle cx="${cx}" cy="${cy}" r="${(r*.64).toFixed(1)}" fill="url(#${id}L)"/>
+  <circle cx="${(cx-r*.22).toFixed(1)}" cy="${(cy-r*.24).toFixed(1)}" r="${(r*.14).toFixed(1)}" fill="#fff" opacity=".55"/>
+  <circle cx="${(cx+r*.2).toFixed(1)}" cy="${(cy+r*.18).toFixed(1)}" r="${(r*.07).toFixed(1)}" fill="#a9b8ff" opacity=".5"/>`;
+}
+function camera(brand, lip, id){
+  let s = `<defs><radialGradient id="${id}L" cx=".38" cy=".35" r=".8"><stop offset="0" stop-color="#40457a"/><stop offset=".38" stop-color="#15162b"/><stop offset="1" stop-color="#040406"/></radialGradient></defs>`;
+  if (brand === 'samsung'){
+    [52,98,144].forEach(y => s += `<circle cx="52" cy="${y}" r="25" fill="${lip}"/>` + lens(id, 52, y, 19));
+    s += `<circle cx="92" cy="58" r="5" fill="#f1ead9" opacity=".85"/><circle cx="92" cy="80" r="4" fill="#26262b"/>`;
+  } else if (brand === 'apple'){
+    s += `<rect x="20" y="20" width="108" height="112" rx="30" fill="${lip}"/><rect x="25" y="25" width="98" height="102" rx="26" fill="#121215" opacity=".93"/>`
+      + lens(id,52,54,19) + lens(id,52,100,19) + lens(id,96,77,19)
+      + `<circle cx="96" cy="112" r="5" fill="#f1ead9" opacity=".85"/><circle cx="96" cy="42" r="5" fill="#26262b"/>`;
+  } else {
+    s += `<rect x="20" y="20" width="120" height="106" rx="28" fill="${lip}"/><rect x="25" y="25" width="110" height="96" rx="24" fill="#121215" opacity=".93"/>`
+      + lens(id,58,62,25) + lens(id,110,50,13) + lens(id,110,90,13)
+      + `<circle cx="58" cy="106" r="4.5" fill="#f1ead9" opacity=".85"/>`;
+  }
+  return s;
+}
+function caseSVG(p, ci, brand){
+  const v = p.colors[ci] || p.colors[0];
+  const id = 'k' + (++UID);
+  const SH = 'x="8" y="8" width="224" height="464" rx="46"';
+  let defs = `<clipPath id="${id}c"><rect ${SH}/></clipPath>
+   <linearGradient id="${id}s" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity=".24"/><stop offset=".16" stop-color="#fff" stop-opacity=".04"/><stop offset=".72" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".22"/></linearGradient>
+   <linearGradient id="${id}v" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".10"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".14"/></linearGradient>`;
+  let body = '', over = '', mark = true, base = mainColor(v);
+  let lip = v.rim || mix(base, '#000000', .28);
+
+  switch (p.type){
+    case 'clear': {
+      defs += `<linearGradient id="${id}g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".6"/><stop offset=".4" stop-color="#fff" stop-opacity=".05"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>`;
+      body = `<rect ${SH} fill="${v.phone}"/><rect ${SH} fill="url(#${id}s)"/><rect ${SH} fill="url(#${id}v)"/>`;
+      over = `<rect ${SH} fill="${v.tint}" opacity="${v.frost ? .6 : .2}"/>
+        <path d="M0 0H160L0 320Z" fill="url(#${id}g)" opacity=".75"/>
+        <circle cx="120" cy="272" r="62" fill="none" stroke="#fff" stroke-opacity=".92" stroke-width="7"/>
+        <circle cx="120" cy="272" r="54.5" fill="none" stroke="#000" stroke-opacity=".08" stroke-width="1.5"/>
+        <rect x="116.5" y="342" width="7" height="24" rx="3.5" fill="#fff" fill-opacity=".92"/>
+        <rect x="12" y="12" width="216" height="456" rx="42" fill="none" stroke="${v.tint}" stroke-width="10"/>`;
+      lip = v.tint; mark = false; break;
+    }
+    case 'leather': {
+      defs += `<filter id="${id}n" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  .9 0 0 0 -.35"/></filter>`;
+      body = `<rect ${SH} fill="${v.c}"/><rect ${SH} filter="url(#${id}n)" opacity=".45"/><rect ${SH} fill="url(#${id}s)"/><rect ${SH} fill="url(#${id}v)"/>
+        <rect x="21" y="21" width="198" height="438" rx="34" fill="none" stroke="${v.st}" stroke-width="1.6" stroke-dasharray="6 4" opacity=".85"/>
+        <text x="120" y="424" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-style="italic" font-weight="600" font-size="26" fill="${v.rim}" opacity=".85">Luxe</text>`;
+      mark = false; break;
+    }
+    case 'armor': {
+      defs += `<pattern id="${id}h" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="${v.f}"/><rect width="2.5" height="7" fill="#000" opacity=".2"/></pattern>`;
+      const corner = (d) => `<path d="${d}" fill="none" stroke="${v.f}" stroke-width="34" stroke-linecap="round"/>`;
+      body = `<rect ${SH} fill="${v.c}"/>
+        <rect x="34" y="156" width="172" height="290" rx="22" fill="url(#${id}h)" opacity=".85"/>
+        <rect ${SH} fill="none" stroke="${v.f}" stroke-width="14"/>
+        ${corner('M8 118V54A46 46 0 0 1 54 8H118')}${corner('M122 8H186A46 46 0 0 1 232 54V118')}
+        ${corner('M232 362V426A46 46 0 0 1 186 472H122')}${corner('M118 472H54A46 46 0 0 1 8 426V362')}
+        <text x="120" y="310" text-anchor="middle" font-family="Readex Pro, sans-serif" font-weight="600" font-size="11" letter-spacing="5" fill="#fff" opacity=".28">ARMOR PRO</text>
+        <rect ${SH} fill="url(#${id}s)"/>`;
+      lip = v.f; mark = false; break;
+    }
+    case 'marble': {
+      defs += `<filter id="${id}b" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="1.6"/></filter>`;
+      const gray = ['M-20 90C40 112 70 58 130 120S210 172 262 140','M-20 232C30 200 82 262 122 240S202 182 262 222','M-10 362C52 330 92 402 152 370S222 330 262 362','M62 -10C82 60 40 122 92 182S122 302 82 492','M202 -10C172 82 212 152 172 232S192 382 232 492'];
+      const gold = ['M-10 172C62 150 92 212 152 190S222 140 262 162','M30 492C60 420 40 380 100 330S172 300 252 262','M150 -10C140 40 170 70 150 110'];
+      body = `<rect ${SH} fill="${v.c}"/>`
+        + gray.map(d => `<path d="${d}" fill="none" stroke="${v.vn}" stroke-width="5" opacity=".35" filter="url(#${id}b)"/><path d="${d}" fill="none" stroke="${v.vn}" stroke-width="1" opacity=".7"/>`).join('')
+        + gold.map((d,i) => `<path d="${d}" fill="none" stroke="${v.gd}" stroke-width="${i===2?1.4:2.4}" opacity=".95"/>`).join('')
+        + `<rect ${SH} fill="url(#${id}s)"/><rect ${SH} fill="url(#${id}v)"/>`;
+      lip = v.gd; mark = false; break;
+    }
+    case 'carbon': {
+      defs += `<linearGradient id="${id}a" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${mix(v.c,'#ffffff',.16)}"/><stop offset="1" stop-color="${mix(v.c,'#000000',.4)}"/></linearGradient>
+        <linearGradient id="${id}d" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="${mix(v.c,'#ffffff',.09)}"/><stop offset="1" stop-color="${mix(v.c,'#000000',.45)}"/></linearGradient>
+        <pattern id="${id}p" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="url(#${id}a)"/><rect x="5" width="5" height="5" fill="url(#${id}d)"/><rect y="5" width="5" height="5" fill="url(#${id}d)"/><rect x="5" y="5" width="5" height="5" fill="url(#${id}a)"/></pattern>`;
+      body = `<rect ${SH} fill="url(#${id}p)"/><rect ${SH} fill="url(#${id}s)"/><rect ${SH} fill="url(#${id}v)"/>`;
+      lip = mix(v.c,'#000000',.4); break;
+    }
+    case 'wave': {
+      defs += `<pattern id="${id}p" width="64" height="64" patternUnits="userSpaceOnUse"><rect width="64" height="64" fill="${v.b}"/><rect width="32" height="32" fill="${v.a}"/><rect x="32" y="32" width="32" height="32" fill="${v.a}"/></pattern>
+        <filter id="${id}w" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency=".009 .011" numOctaves="1" seed="8" result="t"/><feDisplacementMap in="SourceGraphic" in2="t" scale="46" xChannelSelector="R" yChannelSelector="G"/></filter>`;
+      body = `<rect x="-30" y="-30" width="300" height="540" fill="url(#${id}p)" filter="url(#${id}w)"/><rect ${SH} fill="url(#${id}s)" opacity=".6"/>`;
+      lip = mix(v.a,'#000000',.15); mark = false; break;
+    }
+    case 'glitter': {
+      defs += `<linearGradient id="${id}gg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${v.c}"/><stop offset="1" stop-color="${v.c2}"/></linearGradient>`;
+      const R = rng(p.slug.length*977 + ci*131 + 17); let d = '';
+      for (let i = 0; i < 190; i++) d += `<circle cx="${(R()*240).toFixed(1)}" cy="${(R()*480).toFixed(1)}" r="${(.4+R()*1.7).toFixed(2)}" fill="#fff" opacity="${(.25+R()*.7).toFixed(2)}"/>`;
+      for (let i = 0; i < 7; i++){ const x = 30+R()*180, y = 150+R()*300, k = .6+R()*.9;
+        d += `<path transform="translate(${x.toFixed(1)} ${y.toFixed(1)}) scale(${k.toFixed(2)})" d="M0-8 1.6-1.6 8 0 1.6 1.6 0 8-1.6 1.6-8 0-1.6-1.6Z" fill="#fff" opacity=".9"/>`; }
+      body = `<rect ${SH} fill="url(#${id}gg)"/>${d}<rect ${SH} fill="url(#${id}s)"/>`;
+      lip = mix(v.c2,'#000000',.1); mark = false; break;
+    }
+    default:
+      body = `<rect ${SH} fill="${v.c}"/><rect ${SH} fill="url(#${id}s)"/><rect ${SH} fill="url(#${id}v)"/>`;
+  }
+  const mc = lum(base) > .55 ? 'rgba(0,0,0,.18)' : 'rgba(255,255,255,.22)';
+  const markSvg = mark ? `<text x="120" y="424" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-style="italic" font-weight="600" font-size="26" fill="${mc}">Luxe</text>` : '';
+  return `<svg viewBox="0 0 240 480" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>${defs}</defs>
+    <g clip-path="url(#${id}c)">${body}${over}${markSvg}</g>${camera(brand, lip, id)}
+    <rect ${SH} fill="none" stroke="#000" stroke-opacity=".2" stroke-width="1"/>
+    <rect x="9.5" y="9.5" width="221" height="461" rx="44.5" fill="none" stroke="#fff" stroke-opacity=".3" stroke-width="1.2"/></svg>`;
+}
+
+/* ================= STATE ================= */
+let brand = null, model = null, cat = 'all';
+const renderBrand = () => brand || 'apple';
+const fits = p => !brand || p.compat.includes(brand);
+
+/* ================= FINDER ================= */
+function renderFinder(){
+  $('#brandChips').innerHTML = `<button class="chip ${!brand?'on':''}" data-b="">كل الهواتف</button>` +
+    Object.entries(MODELS).map(([k,m]) => `<button class="chip ${brand===k?'on':''}" data-b="${k}" dir="ltr">${m.name}</button>`).join('');
+  const list = brand ? MODELS[brand].list : POPULAR;
+  $('#modelChips').innerHTML = list.map(m => `<button class="model ${model===m?'on':''}" data-m="${m}">${m}</button>`).join('');
+  const st = $('#fStatus');
+  if (model){
+    const n = P.filter(fits).length;
+    st.hidden = false;
+    st.innerHTML = `<span>${I('check')} ${n} جرابات متوافقة مع <b dir="ltr">${model}</b></span><a href="#collection">عرضها</a>`;
+  } else st.hidden = true;
+}
+$('#brandChips').addEventListener('click', e => {
+  const b = e.target.closest('[data-b]'); if (!b) return;
+  brand = b.dataset.b || null; model = null;
+  renderFinder(); renderGrid();
+});
+$('#modelChips').addEventListener('click', e => {
+  const b = e.target.closest('[data-m]'); if (!b) return;
+  if (model === b.dataset.m){ model = null; } else { model = b.dataset.m; brand = MB[model]; }
+  renderFinder(); renderGrid();
+});
+
+/* ================= GRID ================= */
+function cardHTML(p, i){
+  const v = p.colors[0], off = pct(p);
+  return `<article class="card" data-slug="${p.slug}" style="--i:${i}" tabindex="0" aria-label="${esc(p.name)}">
+    <div class="cm" style="--tone:${toneOf(v)}">
+      <div class="badges"><span>${p.badge ? `<span class="badge">${p.badge}</span>` : ''}</span><span>${off ? `<span class="badge sale">-${off}%</span>` : ''}</span></div>
+      <div class="cs">${caseSVG(p, 0, renderBrand())}</div>
+    </div>
+    <div class="cb">
+      <div class="en">${p.en}</div>
+      <h3 class="nm">${p.name}</h3>
+      <div class="pr"><b>${fmt(p.price)}</b>${p.old ? `<s>${fmt(p.old)}</s>` : ''}</div>
+      <div class="dots">${p.colors.map((c,k) => `<button class="dot ${k===0?'on':''}" data-c="${k}" style="background:${swColor(c)}" aria-label="${c.n}" title="${c.n}"></button>`).join('')}</div>
+      <button class="cta" data-order>اطلب الآن ${I('arrowL')}</button>
+    </div>
+  </article>`;
+}
+function renderGrid(){
+  const brandOk = P.filter(fits);
+  $('#catChips').innerHTML = CATS.map(([k,n]) => {
+    const c = k === 'all' ? brandOk.length : brandOk.filter(p => p.cat === k).length;
+    return `<button class="chip ${cat===k?'on':''}" data-cat="${k}">${n}<span class="n">${c}</span></button>`;
+  }).join('');
+  const list = brandOk.filter(p => cat === 'all' || p.cat === cat);
+  $('#gridMeta').innerHTML = `${list.length} منتجات` + (model ? ` · متوافقة مع <b dir="ltr">${model}</b>` : brand ? ` · ${MODELS[brand].name}` : '');
+  $('#grid').innerHTML = list.length ? list.map(cardHTML).join('') : `<div class="empty">لا توجد جرابات في هذا القسم لهاتفك حالياً — <a href="#contact" style="text-decoration:underline">راسلنا</a> ونوفّرها لك.</div>`;
+}
+$('#catChips').addEventListener('click', e => {
+  const b = e.target.closest('[data-cat]'); if (!b) return;
+  cat = b.dataset.cat; renderGrid();
+});
+$('#grid').addEventListener('click', e => {
+  const card = e.target.closest('.card'); if (!card) return;
+  const dot = e.target.closest('[data-c]');
+  const p = P.find(x => x.slug === card.dataset.slug);
+  if (dot){
+    e.stopPropagation();
+    const ci = +dot.dataset.c;
+    $$('.dot', card).forEach(d => d.classList.toggle('on', d === dot));
+    $('.cs', card).innerHTML = caseSVG(p, ci, renderBrand());
+    $('.cm', card).style.setProperty('--tone', toneOf(p.colors[ci]));
+    card.dataset.ci = ci;
+    return;
+  }
+  go(p.slug, +(card.dataset.ci || 0));
+});
+$('#grid').addEventListener('keydown', e => {
+  if (e.key === 'Enter' && e.target.classList.contains('card')) go(e.target.dataset.slug);
+});
+
+/* ================= PRODUCT SHEET ================= */
+const sheet = $('#sheet'), panel = $('#panel');
+let S = null, pushed = false, barIO = null;
+let pendingColor = 0;
+
+function go(slug, ci = 0){ pendingColor = ci; pushed = true; location.hash = 'p/' + slug; }
+
+function modelOptions(p, selected){
+  return Object.entries(MODELS).filter(([b]) => p.compat.includes(b)).map(([b,m]) =>
+    `<optgroup label="${m.name}">${m.list.map(x => `<option ${x===selected?'selected':''}>${x}</option>`).join('')}</optgroup>`).join('');
+}
+const wilayaOptions = () => `<option value="">اختر الولاية</option>` + DZ.map(([c,n]) => `<option value="${c}">${c} · ${n}</option>`).join('');
+
+function topBar(){
+  return `<div class="pd-top"><button class="back" data-close>${I('arrowR')}<span>رجوع</span></button>
+    <a class="logo" dir="ltr" data-close><span class="l1">SMARTPHONE</span><span class="l2">Luxe</span></a>
+    <button class="ibtn" data-close aria-label="إغلاق">${I('x')}</button></div>`;
+}
+
+function openProduct(slug, opt = {}){
+  const p = P.find(x => x.slug === slug); if (!p) return;
+  const defModel = (model && p.compat.includes(MB[model])) ? model : MODELS[p.compat.includes(renderBrand()) ? renderBrand() : p.compat[0]].list[0];
+  S = {p, ci: Math.min(pendingColor, p.colors.length-1), model: defModel, qty: 1, up: false, ship: 'home', view: 'back'};
+  pendingColor = 0;
+  const off = pct(p);
+  panel.innerHTML = topBar() + `
+  <div class="pd">
+    <div class="pd-media">
+      <div class="stage" id="stage" data-v="back">
+        <div class="st-badge">${off ? `<span class="badge sale">-${off}%</span>` : p.badge ? `<span class="badge">${p.badge}</span>` : ''}</div>
+        <div class="cs" id="stageCase"></div>
+      </div>
+      <div class="views" id="views">
+        <button class="view on" data-v="back">الخلف</button><button class="view" data-v="angle">زاوية</button><button class="view" data-v="detail">الكاميرا</button>
+      </div>
+    </div>
+    <div class="pd-info">
+      <div class="en">${p.en}</div>
+      <h2>${p.name}</h2>
+      <p class="sub">${p.sub}</p>
+      <div class="pr big"><b>${fmt(p.price)}</b>${p.old ? `<s>${fmt(p.old)}</s><span class="save">وفّر ${fmt(p.old - p.price)}</span>` : ''}</div>
+      <ul class="pts">${p.pts.map(t => `<li>${I('check')}${t}</li>`).join('')}</ul>
+      <div class="opts">
+        <div class="fld"><label for="f-model">موديل هاتفك</label><select id="f-model" dir="ltr">${modelOptions(p, defModel)}</select></div>
+        <div class="fld"><label>اللون: <b id="cName"></b></label><div class="sw" id="sw">${p.colors.map((c,k) => `<button type="button" class="swb" data-c="${k}" style="background:${swColor(c)}" aria-label="${c.n}" title="${c.n}"></button>`).join('')}</div></div>
+        <div class="fld"><label>الكمية</label><div class="qty"><button type="button" data-q="1" aria-label="زيادة">+</button><span id="qv">1</span><button type="button" data-q="-1" aria-label="إنقاص">−</button></div></div>
+        <label class="up" id="up"><input type="checkbox" id="f-up"><span class="up-box">${I('check')}</span><span class="up-t"><b>أضف واقي شاشة زجاجي 9H</b><small>يحمي شاشتك من الخدوش والكسر</small></span><span class="up-p">+${fmt(UPSELL)}</span></label>
+      </div>
+      <form class="order" id="order" novalidate>
+        <div class="o-h"><span class="o-i">${I('truck')}</span><div><h3>معلومات التوصيل</h3><p>املأ معلوماتك وسنتصل بك لتأكيد الطلب.</p></div></div>
+        <div class="g2">
+          <div class="fld"><label for="f-fn">الاسم</label><input id="f-fn" autocomplete="given-name" placeholder="مثال: محمد"><div class="msg">أدخل الاسم</div></div>
+          <div class="fld"><label for="f-ln">اللقب</label><input id="f-ln" autocomplete="family-name" placeholder="مثال: بن علي"><div class="msg">أدخل اللقب</div></div>
+        </div>
+        <div class="fld"><label for="f-ph">رقم الهاتف</label><input id="f-ph" type="tel" inputmode="numeric" dir="ltr" autocomplete="tel" placeholder="05XX XX XX XX"><div class="msg">رقم غير صحيح — يجب أن يبدأ بـ 05 أو 06 أو 07 (10 أرقام)</div></div>
+        <div class="g2">
+          <div class="fld"><label for="f-w">الولاية</label><select id="f-w">${wilayaOptions()}</select><div class="msg">اختر الولاية</div></div>
+          <div class="fld"><label for="f-c">البلدية</label><select id="f-c" disabled><option value="">اختر البلدية</option></select><div class="msg">اختر البلدية</div></div>
+        </div>
+        <div class="fld"><label>طريقة التوصيل</label>
+          <div class="ship" id="ship">
+            <label class="opt on"><input type="radio" name="ship" value="home" checked><span class="opt-i">${I('home')}</span><b>إلى المنزل</b><small id="sp-home">اختر الولاية</small></label>
+            <label class="opt"><input type="radio" name="ship" value="desk"><span class="opt-i">${I('store')}</span><b>إلى مكتب التوصيل</b><small id="sp-desk">اختر الولاية</small></label>
+          </div>
+        </div>
+        <div class="sum" id="sum"></div>
+        <button class="btn-order" type="submit" id="submitBtn"><span>تأكيد الطلب</span><small>الدفع عند الاستلام</small></button>
+        <p class="safe">${I('lock')} لا دفع مسبق — تدفع فقط عند استلام طلبك</p>
+      </form>
+    </div>
+  </div>
+  <div class="pd-bar" id="pdBar"><div><small>المجموع</small><b id="barTotal"></b></div><button type="button" id="barGo">أكّد الطلب ${I('arrowL')}</button></div>`;
+
+  bindProduct();
+  paintCase(); update();
+  sheet.hidden = false; document.body.classList.add('lock');
+  panel.scrollTop = 0;
+  if (opt.demo) prefill();
+  if (opt.form) requestAnimationFrame(() => { $('#order').scrollIntoView({block:'start'}); });
+}
+
+function paintCase(){
+  const {p, ci} = S, b = MB[S.model] || 'apple';
+  $('#stageCase').innerHTML = caseSVG(p, ci, b);
+  $('#stage').style.setProperty('--tone', toneOf(p.colors[ci]));
+  $('#cName').textContent = p.colors[ci].n;
+  $$('#sw .swb').forEach(x => x.classList.toggle('on', +x.dataset.c === ci));
+}
+
+function totals(){
+  const {p, qty, up, ship} = S;
+  const w = $('#f-w').value, sp = shipFor(w);
+  const sub = p.price * qty, ups = up ? UPSELL : 0, del = sp ? sp[ship] : 0;
+  return {sub, ups, del, w, sp, total: sub + ups + del};
+}
+function update(){
+  const t = totals();
+  $('#qv').textContent = S.qty;
+  $('#sp-home').textContent = t.sp ? fmt(t.sp.home) : 'اختر الولاية';
+  $('#sp-desk').textContent = t.sp ? fmt(t.sp.desk) : 'اختر الولاية';
+  $('#sum').innerHTML =
+    `<div class="row"><span>${S.p.name} × ${S.qty}</span><span>${fmt(t.sub)}</span></div>` +
+    (S.up ? `<div class="row"><span>واقي شاشة زجاجي 9H</span><span>${fmt(t.ups)}</span></div>` : '') +
+    `<div class="row"><span>التوصيل (${S.ship === 'home' ? 'إلى المنزل' : 'إلى المكتب'})</span><span>${t.sp ? fmt(t.del) : 'حسب الولاية'}</span></div>` +
+    `<div class="row tot"><span>المجموع</span><b>${fmt(t.total)}</b></div>`;
+  $('#barTotal').textContent = fmt(t.total);
+}
+
+function fillCommunes(code, selected){
+  const sel = $('#f-c'), w = DZ.find(x => x[0] === code);
+  sel.innerHTML = `<option value="">اختر البلدية</option>` + (w ? w[2].map(c => `<option ${c===selected?'selected':''}>${c}</option>`).join('') : '');
+  sel.disabled = !w;
+}
+function formatPhone(v){
+  const d = v.replace(/\D/g,'').slice(0,10);
+  return [d.slice(0,4), d.slice(4,6), d.slice(6,8), d.slice(8,10)].filter(Boolean).join(' ');
+}
+
+function bindProduct(){
+  $('#views').addEventListener('click', e => {
+    const b = e.target.closest('[data-v]'); if (!b) return;
+    $('#stage').dataset.v = b.dataset.v;
+    $$('#views .view').forEach(x => x.classList.toggle('on', x === b));
+  });
+  $('#sw').addEventListener('click', e => { const b = e.target.closest('[data-c]'); if (!b) return; S.ci = +b.dataset.c; paintCase(); });
+  $('#f-model').addEventListener('change', e => { S.model = e.target.value; paintCase(); });
+  $$('[data-q]', panel).forEach(b => b.addEventListener('click', () => { S.qty = Math.max(1, Math.min(10, S.qty + +b.dataset.q)); update(); }));
+  $('#f-up').addEventListener('change', e => { S.up = e.target.checked; $('#up').classList.toggle('on', S.up); update(); });
+  $('#f-w').addEventListener('change', e => { fillCommunes(e.target.value); update(); });
+  $('#ship').addEventListener('change', e => {
+    S.ship = e.target.value;
+    $$('#ship .opt').forEach(o => o.classList.toggle('on', o.querySelector('input').checked));
+    update();
+  });
+  $('#f-ph').addEventListener('input', e => { e.target.value = formatPhone(e.target.value); });
+  $$('#order input, #order select').forEach(el => el.addEventListener('input', () => el.closest('.fld').classList.remove('err')));
+  $('#order').addEventListener('submit', e => { e.preventDefault(); submitOrder(); });
+  $('#barGo').addEventListener('click', submitOrder);
+
+  if (barIO) barIO.disconnect();
+  barIO = new IntersectionObserver(([en]) => $('#pdBar') && $('#pdBar').classList.toggle('hide', en.isIntersecting), {root: panel, threshold: .3});
+  barIO.observe($('#submitBtn'));
+}
+
+function prefill(){
+  $('#f-fn').value = 'محمد'; $('#f-ln').value = 'بن علي'; $('#f-ph').value = formatPhone('0550000000');
+  $('#f-w').value = '16'; fillCommunes('16', 'باب الزوار');
+  S.up = true; $('#f-up').checked = true; $('#up').classList.add('on');
+  update();
+}
+
+function validate(){
+  const rules = [
+    ['#f-fn', v => v.trim().length >= 2],
+    ['#f-ln', v => v.trim().length >= 2],
+    ['#f-ph', v => /^0[567]\d{8}$/.test(v.replace(/\D/g,''))],
+    ['#f-w',  v => !!v],
+    ['#f-c',  v => !!v]
+  ];
+  let first = null;
+  rules.forEach(([s, ok]) => {
+    const el = $(s), bad = !ok(el.value);
+    el.closest('.fld').classList.toggle('err', bad);
+    if (bad && !first) first = el;
+  });
+  if (first){ first.scrollIntoView({block:'center', behavior:'smooth'}); setTimeout(() => first.focus({preventScroll:true}), 350); }
+  return !first;
+}
+
+function submitOrder(){
+  if (!validate()) return;
+  const t = totals();
+  const w = DZ.find(x => x[0] === t.w);
+  renderDone({
+    fn: $('#f-fn').value.trim(), ph: $('#f-ph').value, commune: $('#f-c').value, wilaya: w[1],
+    total: t.total, ship: S.ship, no: 'SL-' + (10000 + Math.floor(Math.random()*89999))
+  });
+}
+
+function renderDone(d){
+  const {p, ci, model: m, qty} = S;
+  if (barIO) barIO.disconnect();
+  panel.innerHTML = topBar() + `
+  <div class="done">
+    <div class="ok-ic"><svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15.5 27.5 22.5 34 37 19"/></svg></div>
+    <div class="en">ORDER CONFIRMED</div>
+    <h2>شكراً ${esc(d.fn)}، تم تسجيل طلبك!</h2>
+    <p>سيتصل بك فريق <b dir="ltr">Smartphone Luxe</b> على الرقم <b dir="ltr">${esc(d.ph)}</b> خلال 24 ساعة لتأكيد الطلب، ثم يُشحن مباشرة.</p>
+    <div class="rcpt">
+      <div class="rc-h"><div class="rc-th" style="--tone:${toneOf(p.colors[ci])}"><div class="cs">${caseSVG(p, ci, MB[m] || 'apple')}</div></div>
+        <div><b>${p.name}</b><small><bdi>${m}</bdi> · ${p.colors[ci].n} · الكمية ${qty}</small></div></div>
+      <div class="rc-rows">
+        <div class="row"><span>رقم الطلب</span><span dir="ltr">#${d.no}</span></div>
+        <div class="row"><span>التوصيل</span><span>${d.ship === 'home' ? 'إلى المنزل' : 'إلى مكتب التوصيل'} — ${esc(d.commune)}، ${esc(d.wilaya)}</span></div>
+        <div class="row"><span>الدفع</span><span>نقداً عند الاستلام</span></div>
+        <div class="row tot"><span>المجموع</span><b>${fmt(d.total)}</b></div>
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step"><i>1</i>اتصال لتأكيد الطلب</div>
+      <div class="step"><i>2</i>التجهيز والشحن</div>
+      <div class="step"><i>3</i>الاستلام والدفع</div>
+    </div>
+    <button class="btn btn-dark" data-close>متابعة التسوّق ${I('arrowL')}</button>
+    <p class="demo-note">نسخة عرض تجريبية — لم يُرسَل أي طلب فعلي.</p>
+  </div>`;
+  panel.scrollTop = 0;
+}
+
+function closeSheet(){
+  if (sheet.hidden) return;
+  sheet.hidden = true; document.body.classList.remove('lock');
+  if (barIO) barIO.disconnect();
+  panel.innerHTML = ''; S = null;
+}
+function requestClose(){
+  if (pushed){ pushed = false; history.back(); }
+  else { history.replaceState(null, '', location.pathname + location.search); closeSheet(); }
+}
+sheet.addEventListener('click', e => { if (e.target.closest('[data-close]')){ e.preventDefault(); requestClose(); } });
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && !sheet.hidden) requestClose(); });
+
+/* ================= ROUTER ================= */
+// #p/<slug>            صفحة المنتج
+// #p/<slug>/demo       مع بيانات تجريبية
+// #p/<slug>/demo/form  مع التمرير إلى الاستمارة
+// #ok/<slug>           شاشة تأكيد الطلب (عرض)
+function route(){
+  const h = decodeURIComponent(location.hash.slice(1));
+  const parts = h.split('/');
+  if (parts[0] === 'p' && parts[1]){
+    openProduct(parts[1], {demo: parts[2] === 'demo', form: parts[3] === 'form'});
+  } else if (parts[0] === 'ok' && parts[1]){
+    openProduct(parts[1], {demo: true});
+    submitOrder();
+  } else {
+    pushed = false; closeSheet();
+  }
+}
+window.addEventListener('hashchange', route);
+
+/* ================= INIT ================= */
+$$('[data-i]').forEach(el => el.outerHTML = I(el.dataset.i));
+$$('[data-stars]').forEach(el => el.innerHTML = I('star').repeat(5));
+const byS = s => P.find(p => p.slug === s);
+$('#h1').innerHTML = caseSVG(byS('marble-gold'), 0, 'apple');
+$('#h2').innerHTML = caseSVG(byS('heritage-leather'), 0, 'apple');
+$('#h3').innerHTML = caseSVG(byS('silk-silicone'), 0, 'apple');
+$('#featCase').innerHTML = caseSVG(byS('crystal-magsafe'), 0, 'apple');
+renderFinder(); renderGrid();
+
+const hdr = $('.hdr');
+addEventListener('scroll', () => hdr.classList.toggle('scrolled', scrollY > 10), {passive:true});
+const menuBtn = $('#menuBtn'), mnav = $('#mnav');
+menuBtn.addEventListener('click', () => { mnav.hidden = !mnav.hidden; menuBtn.setAttribute('aria-expanded', String(!mnav.hidden)); });
+mnav.addEventListener('click', e => { if (e.target.closest('a')) mnav.hidden = true; });
+
+const rvIO = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); rvIO.unobserve(e.target); } }), {threshold: .12});
+$$('.rv').forEach(el => rvIO.observe(el));
+if (matchMedia('(prefers-reduced-motion: reduce)').matches) $$('.rv').forEach(el => el.classList.add('in'));
+
+route();
+</script>
+</body>
+</html>
